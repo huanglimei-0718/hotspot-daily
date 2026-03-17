@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>每日热点简报</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Noto Sans SC', sans-serif; }
+    .category-finance { border-left-color: #3b82f6; }
+    .category-politics { border-left-color: #ef4444; }
+    .category-global { border-left-color: #10b981; }
+    .category-other { border-left-color: #6b7280; }
+    .loading { animation: pulse 2s infinite; }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+  </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+  <div class="max-w-4xl mx-auto px-4 py-8">
+    <!-- Header -->
+    <header class="mb-8">
+      <h1 class="text-3xl font-bold text-gray-900 mb-2">📊 每日热点简报</h1>
+      <p class="text-gray-500" id="update-time">加载中...</p>
+    </header>
+
+    <!-- Category Tabs -->
+    <div class="flex gap-2 mb-6 flex-wrap">
+      <button onclick="filterCategory('all')" class="tab-btn active px-4 py-2 rounded-lg bg-blue-600 text-white font-medium" data-category="all">
+        全部
+      </button>
+      <button onclick="filterCategory('finance')" class="tab-btn px-4 py-2 rounded-lg bg-gray-200 text-gray-700 font-medium hover:bg-gray-300" data-category="finance">
+        💰 财经金融
+      </button>
+      <button onclick="filterCategory('politics')" class="tab-btn px-4 py-2 rounded-lg bg-gray-200 text-gray-700 font-medium hover:bg-gray-300" data-category="politics">
+        🏛️ 时政要闻
+      </button>
+      <button onclick="filterCategory('global')" class="tab-btn px-4 py-2 rounded-lg bg-gray-200 text-gray-700 font-medium hover:bg-gray-300" data-category="global">
+        🌍 全球局势
+      </button>
+    </div>
+
+    <!-- Content -->
+    <div id="content" class="space-y-6">
+      <div class="text-center py-12 text-gray-400 loading">
+        正在加载热点数据...
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-12 pt-6 border-t border-gray-200 text-center text-gray-400 text-sm">
+      <p>数据来源：微博、百度、头条热榜 | 仅供个人参考</p>
+      <p class="mt-1">由 🦞 槑头脑特工4号 自动生成</p>
+    </footer>
+  </div>
+
+  <script>
+    let allHotspots = [];
+    let currentCategory = 'all';
+
+    // 加载热点数据
+    async function loadHotspots() {
+      const today = new Date().toISOString().split('T')[0];
+      
+      try {
+        const response = await fetch(`data/hotspots-${today}.json`);
+        if (!response.ok) throw new Error('数据文件不存在');
+        
+        const data = await response.json();
+        allHotspots = data;
+        
+        document.getElementById('update-time').textContent = 
+          `更新时间: ${new Date(data.updated).toLocaleString('zh-CN')} | 共 ${data.total || data.items.length} 条热点`;
+        
+        renderHotspots();
+      } catch (error) {
+        document.getElementById('content').innerHTML = `
+          <div class="text-center py-12 text-gray-500">
+            <p class="text-xl mb-2">😅 暂无今日热点数据</p>
+            <p class="text-sm">请稍后再来查看</p>
+          </div>
+        `;
+      }
+    }
+
+    // 渲染热点
+    function renderHotspots() {
+      const container = document.getElementById('content');
+      container.innerHTML = '';
+
+      const items = allHotspots.items || [];
+      const filteredItems = currentCategory === 'all' 
+        ? items 
+        : items.filter(item => item.category === currentCategory);
+
+      // 按分类排序
+      const sortedItems = [...filteredItems].sort((a, b) => a.rank - b.rank);
+
+      // 按来源分组
+      const grouped = {};
+      sortedItems.forEach(item => {
+        const source = item.source || '其他';
+        if (!grouped[source]) grouped[source] = [];
+        grouped[source].push(item);
+      });
+
+      // 渲染每个分组
+      for (const [source, groupItems] of Object.entries(grouped)) {
+        const section = document.createElement('div');
+        section.className = 'bg-white rounded-xl shadow-sm overflow-hidden';
+        
+        section.innerHTML = `
+          <div class="px-6 py-4 border-b border-gray-100 flex items-center justify-between">
+            <h2 class="text-lg font-semibold text-gray-900">${source}</h2>
+            <span class="text-sm text-gray-400">${groupItems.length} 条</span>
+          </div>
+          <ul class="divide-y divide-gray-50">
+            ${groupItems.map(item => `
+              <li class="px-6 py-3 hover:bg-gray-50 transition-colors border-l-4 category-${item.category}">
+                <div class="flex items-start justify-between">
+                  <div class="flex-1">
+                    <span class="inline-block w-6 h-6 text-center text-sm font-bold text-gray-400 mr-2">
+                      ${item.rank}
+                    </span>
+                    <span class="text-gray-800">${escapeHtml(item.title)}</span>
+                  </div>
+                  ${item.hot_value ? `
+                    <span class="text-xs text-gray-400 ml-2 whitespace-nowrap">
+                      🔥 ${item.hot_value}
+                    </span>
+                  ` : ''}
+                </div>
+              </li>
+            `).join('')}
+          </ul>
+        `;
+        
+        container.appendChild(section);
+      }
+
+      if (container.children.length === 0) {
+        container.innerHTML = `
+          <div class="text-center py-12 text-gray-500">
+            <p>该分类暂无热点</p>
+          </div>
+        `;
+      }
+    }
+
+    // 分类过滤
+    function filterCategory(category) {
+      currentCategory = category;
+      
+      // 更新按钮样式
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        if (btn.dataset.category === category) {
+          btn.className = 'tab-btn active px-4 py-2 rounded-lg bg-blue-600 text-white font-medium';
+        } else {
+          btn.className = 'tab-btn px-4 py-2 rounded-lg bg-gray-200 text-gray-700 font-medium hover:bg-gray-300';
+        }
+      });
+      
+      renderHotspots();
+    }
+
+    // HTML转义
+    function escapeHtml(text) {
+      const div = document.createElement('div');
+      div.textContent = text;
+      return div.innerHTML;
+    }
+
+    // 页面加载时执行
+    loadHotspots();
+  </script>
+</body>
+</html>

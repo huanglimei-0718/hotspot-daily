@@ -1,0 +1,22 @@
+{
+  "date": "2026-03-17",
+  "updated": "2026-03-17T16:00:00+08:00",
+  "total": 15,
+  "items": [
+    {"title": "央行宣布降准0.5个百分点", "source": "微博热榜", "rank": 1, "hot_value": "987万", "category": "finance"},
+    {"title": "A股三大指数集体高开", "source": "微博热榜", "rank": 3, "hot_value": "856万", "category": "finance"},
+    {"title": "证监会发布新规规范量化交易", "source": "百度热搜", "rank": 2, "hot_value": "723万", "category": "finance"},
+    {"title": "人民币汇率创近半年新高", "source": "头条热榜", "rank": 5, "hot_value": "612万", "category": "finance"},
+    {"title": "国务院常务会议部署稳经济措施", "source": "微博热榜", "rank": 2, "hot_value": "923万", "category": "politics"},
+    {"title": "两会代表热议科技创新", "source": "百度热搜", "rank": 4, "hot_value": "687万", "category": "politics"},
+    {"title": "全国人大常委会会议召开", "source": "头条热榜", "rank": 3, "hot_value": "598万", "category": "politics"},
+    {"title": "中纪委通报多起典型案例", "source": "微博热榜", "rank": 8, "hot_value": "445万", "category": "politics"},
+    {"title": "中美高层会谈取得积极进展", "source": "微博热榜", "rank": 4, "hot_value": "892万", "category": "global"},
+    {"title": "欧盟通过新一轮对俄制裁", "source": "百度热搜", "rank": 6, "hot_value": "534万", "category": "global"},
+    {"title": "朝鲜半岛局势持续紧张", "source": "头条热榜", "rank": 2, "hot_value": "723万", "category": "global"},
+    {"title": "乌克兰局势最新进展", "source": "微博热榜", "rank": 6, "hot_value": "678万", "category": "global"},
+    {"title": "美联储释放降息信号", "source": "百度热搜", "rank": 1, "hot_value": "892万", "category": "finance"},
+    {"title": "地方政府债务化解方案出台", "source": "头条热榜", "rank": 4, "hot_value": "567万", "category": "finance"},
+    {"title": "外交部发言人就台湾问题答记者问", "source": "微博热榜", "rank": 5, "hot_value": "756万", "category": "politics"}
+  ]
+}
