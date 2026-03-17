@@ -1,99 +1,125 @@
 {
   "date": "2026-03-17",
-  "updated": "2026-03-17T18:20:00+08:00",
-  "total": 8,
+  "updated": "2026-03-17T18:55:00+08:00",
+  "total": 10,
   "items": [
     {
-      "title": "央行宣布降准0.5个百分点",
+      "title": "央行年内首次降准正式实施",
       "source": "微博热榜",
       "rank": 1,
       "hot_value": "987万",
       "category": "finance",
       "detail": {
-        "summary": "中国人民银行决定于3月27日下调金融机构存款准备金率0.5个百分点，预计释放长期资金约1.2万亿元，支持实体经济发展。",
-        "opinions": ["利好股市，流动性增加", "降低企业融资成本", "房地产市场或受提振"],
-        "url": "https://news.sina.com.cn"
+        "summary": "央行下调金融机构存款准备金率0.5个百分点，释放约1万亿元长期资金，支持信贷投放、提振市场信心。",
+        "opinions": ["利好股市流动性", "降低企业融资成本", "房地产市场或受提振"],
+        "url": "https://www.pbc.gov.cn"
       }
     },
     {
-      "title": "A股三大指数集体高开",
-      "source": "微博热榜",
-      "rank": 3,
+      "title": "A股三大指数震荡调整 沪指跌0.85%",
+      "source": "百度热搜",
+      "rank": 2,
       "hot_value": "856万",
       "category": "finance",
       "detail": {
-        "summary": "受央行降准消息影响，A股三大指数集体高开，沪指涨1.2%，深成指涨1.5%，创业板指涨1.8%。",
-        "url": "https://finance.sina.com.cn"
+        "summary": "上证指数收盘4049.91点，跌幅0.85%，全天震荡调整。央行开展510亿元逆回购操作释放流动性。",
+        "opinions": ["短期或延续宽幅震荡", "政策提供底线支撑"],
+        "url": "https://finance.sina.com.cn/stock/"
       }
     },
     {
-      "title": "证监会发布新规规范量化交易",
-      "source": "百度热搜",
-      "rank": 2,
-      "hot_value": "723万",
-      "category": "finance",
-      "detail": {
-        "summary": "证监会发布《证券市场程序化交易管理规定》，对量化交易实施严格监管，要求报告交易策略、限制高频交易频率。",
-        "opinions": ["有利于市场公平", "量化机构面临转型压力", "长期利好市场健康发展"],
-        "url": "https://www.csrc.gov.cn"
-      }
-    },
-    {
-      "title": "国务院常务会议部署稳经济措施",
+      "title": "2026央视3·15晚会曝光增高骗局",
       "source": "微博热榜",
-      "rank": 2,
-      "hot_value": "923万",
-      "category": "politics",
-      "detail": {
-        "summary": "国务院常务会议召开，部署更大力度稳经济政策措施，包括减税降费、扩大内需、稳定就业等多项举措。",
-        "url": "https://www.gov.cn"
-      }
-    },
-    {
-      "title": "中美高层会谈取得积极进展",
-      "source": "微博热榜",
-      "rank": 4,
+      "rank": 3,
       "hot_value": "892万",
+      "category": "other",
+      "detail": {
+        "summary": "央视3·15晚会曝光德脊瑞物理增高服务为骗局，无医疗资质却宣称3个月增高5-8厘米。",
+        "opinions": ["消费者需警惕虚假宣传", "监管部门应加强整治"],
+        "url": "https://cctv.cctv.com/2026/0315/"
+      }
+    },
+    {
+      "title": "美联储降息预期推迟 美债利率波动",
+      "source": "头条热榜",
+      "rank": 1,
+      "hot_value": "756万",
       "category": "global",
       "detail": {
-        "summary": "中美两国外长在北京举行会谈，就双边关系、经贸合作、气候变化等议题深入交换意见，达成多项共识。",
-        "opinions": ["关系缓和利好全球经济", "期待更多实质性合作"],
-        "url": "https://www.fmprc.gov.cn"
-      }
-    },
-    {
-      "title": "美联储释放降息信号",
-      "source": "百度热搜",
-      "rank": 1,
-      "hot_value": "892万",
-      "category": "finance",
-      "detail": {
-        "summary": "美联储主席在国会听证会上释放降息信号，暗示可能在年中开始降息，全球市场应声上涨。",
-        "opinions": ["全球流动性宽松周期开启", "人民币汇率压力减轻"],
+        "summary": "美联储降息预期推迟，美债利率波动对高估值成长股形成压制。",
+        "opinions": ["全球流动性宽松周期或延后", "人民币汇率压力缓解"],
         "url": "https://www.federalreserve.gov"
       }
     },
     {
-      "title": "某知名演员官宣结婚",
+      "title": "国务院部署稳经济一揽子政策",
       "source": "微博热榜",
-      "rank": 5,
-      "hot_value": "856万",
-      "category": "entertainment",
+      "rank": 4,
+      "hot_value": "723万",
+      "category": "politics",
       "detail": {
-        "summary": "某知名演员在个人社交平台官宣结婚喜讯，引发网友热烈祝福。",
-        "opinions": ["恭喜恭喜！", "太般配了", "永远幸福"],
-        "url": "https://weibo.com"
+        "summary": "国务院常务会议部署更大力度稳经济政策措施，包括减税降费、扩大内需、稳定就业等。",
+        "url": "https://www.gov.cn"
       }
     },
     {
-      "title": "热门综艺收视率破纪录",
+      "title": "汇金公司发挥平准基金作用稳定市场",
+      "source": "百度热搜",
+      "rank": 5,
+      "hot_value": "654万",
+      "category": "finance",
+      "detail": {
+        "summary": "汇金公司持续发挥平准基金作用，为市场提供底线支撑，稳定投资者信心。",
+        "opinions": ["有利于市场稳定", "长期资金入市信号"],
+        "url": "https://www.huijin-inv.cn"
+      }
+    },
+    {
+      "title": "中美经贸高层会谈举行",
       "source": "头条热榜",
+      "rank": 3,
+      "hot_value": "687万",
+      "category": "global",
+      "detail": {
+        "summary": "中美经贸高层在北京举行会谈，就双边贸易、经济合作等议题交换意见。",
+        "opinions": ["关系缓和利好全球经济", "期待实质性进展"],
+        "url": "https://www.mofcom.gov.cn"
+      }
+    },
+    {
+      "title": "多地出台房地产新政",
+      "source": "微博热榜",
       "rank": 6,
-      "hot_value": "645万",
+      "hot_value": "598万",
+      "category": "finance",
+      "detail": {
+        "summary": "多个城市出台房地产新政，优化限购政策、降低首付比例，促进房地产市场平稳发展。",
+        "opinions": ["政策持续放松", "购房者信心有望恢复"],
+        "url": "https://www.jiemian.com"
+      }
+    },
+    {
+      "title": "新能源汽车销量创新高",
+      "source": "百度热搜",
+      "rank": 7,
+      "hot_value": "534万",
+      "category": "finance",
+      "detail": {
+        "summary": "新能源汽车销量持续增长，多家车企公布亮眼销售数据，行业景气度提升。",
+        "opinions": ["渗透率持续提升", "产业链受益"],
+        "url": "https://auto.sina.com.cn"
+      }
+    },
+    {
+      "title": "某知名演员官宣新剧定档",
+      "source": "微博热榜",
+      "rank": 8,
+      "hot_value": "812万",
       "category": "entertainment",
       "detail": {
-        "summary": "某热门综艺节目最新一期收视率突破3%，创年度综艺收视新高，相关话题霸榜热搜。",
-        "url": "https://www.iqiyi.com"
+        "summary": "某知名演员新剧正式官宣定档，引发粉丝热烈期待。",
+        "opinions": ["期待播出", "演员演技在线"],
+        "url": "https://weibo.com"
       }
     }
   ]
