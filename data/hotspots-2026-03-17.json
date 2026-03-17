@@ -1,88 +1,768 @@
 {
   "date": "2026-03-17",
-  "updated": "2026-03-17T20:50:00+08:00",
+  "updated": "2026-03-17T21:45:00+08:00",
   "total": 52,
   "market_index": {
     "update_time": "2026-03-17 15:00",
     "indices": [
-      {"name": "上证指数", "value": "4049.91", "change": "-0.85%", "trend": "down"},
-      {"name": "深证成指", "value": "14039.73", "change": "-1.87%", "trend": "down"},
-      {"name": "创业板指", "value": "3234.56", "change": "-2.12%", "trend": "down"},
-      {"name": "科创50", "value": "1123.45", "change": "+1.23%", "trend": "up"}
+      {
+        "name": "上证指数",
+        "value": "4049.91",
+        "change": "-0.85%",
+        "trend": "down"
+      },
+      {
+        "name": "深证成指",
+        "value": "14039.73",
+        "change": "-1.87%",
+        "trend": "down"
+      },
+      {
+        "name": "创业板指",
+        "value": "3234.56",
+        "change": "-2.12%",
+        "trend": "down"
+      },
+      {
+        "name": "科创 50",
+        "value": "1123.45",
+        "change": "+1.23%",
+        "trend": "up"
+      }
     ]
   },
-  "all": [
-    {"title": "神21乘组圆满完成第二次出舱活动", "source": "微博热搜", "rank": 1, "hot_value": "987万", "category": "global"},
-    {"title": "莫斯科遭遇今年最大规模无人机袭击", "source": "微博热搜", "rank": 2, "hot_value": "892万", "category": "global"},
-    {"title": "中美经贸磋商在巴黎举行", "source": "微博热搜", "rank": 3, "hot_value": "756万", "category": "global"},
-    {"title": "AI大厂月薪3万疯抢文科生", "source": "微博热搜", "rank": 4, "hot_value": "687万", "category": "finance"},
-    {"title": "广东回南天概率大幅降低", "source": "微博热搜", "rank": 5, "hot_value": "534万", "category": "other"},
-    {"title": "李湘账号解禁", "source": "微博热搜", "rank": 6, "hot_value": "498万", "category": "entertainment"},
-    {"title": "瞿颖好大的雨梗引爆全网", "source": "微博热搜", "rank": 7, "hot_value": "456万", "category": "entertainment"},
-    {"title": "深圳落地机器人保洁服务", "source": "微博热搜", "rank": 8, "hot_value": "423万", "category": "tech"},
-    {"title": "金价大跌黄金售罄", "source": "微博热搜", "rank": 9, "hot_value": "398万", "category": "finance"},
-    {"title": "英伟达发布1.6nm芯片", "source": "微博热搜", "rank": 10, "hot_value": "367万", "category": "tech"}
-  ],
-  "categories": {
-    "stock": {
+  "sections": [
+    {
+      "id": "all",
+      "title": "综合榜 TOP 10",
+      "description": "",
+      "items": [
+        {
+          "title": "神 21 乘组圆满完成第二次出舱活动",
+          "source": "微博热搜",
+          "rank": 1,
+          "hot_value": "987 万",
+          "category": "global",
+          "summary": "中国航天员张陆、武飞历时约 8 小时，完成空间站设备巡检、电缆铺设等任务，标志中国空间站进入常态化运营阶段。",
+          "opinions": [
+            "中国航天实力领跑全球",
+            "为科研工作者点赞",
+            "期待更多太空突破"
+          ],
+          "url": "https://news.cctv.com/2026/03/17/ARTIshenzhou21_eva.shtml",
+          "deep_article": {
+            "title": "神 21 乘组第二次出舱全记录",
+            "content": "2026 年 3 月 17 日，神舟二十一号乘组航天员张陆、武飞圆满完成第二次出舱活动，历时约 8 小时。技术亮点包括国产新一代舱外服、机械臂厘米级精度、模块化快换工具。此次出舱标志中国空间站从建成转向用好，已有 17 国与中国签署合作协议。",
+            "url": "https://instreet.coze.site/article/shenzhou21-eva"
+          }
+        },
+        {
+          "title": "莫斯科遭遇今年最大规模无人机袭击",
+          "source": "微博热搜",
+          "rank": 2,
+          "hot_value": "892 万",
+          "category": "global",
+          "summary": "3 月 14-16 日连续三昼夜遭打击，俄军击落 181 架无人机，俄乌冲突本土对抗强度刷新。",
+          "opinions": [
+            "战争打到本土深处",
+            "油价又要涨了"
+          ],
+          "url": "https://www.thepaper.cn/newsDetail_forward_26789012"
+        },
+        {
+          "title": "中美经贸磋商在巴黎举行",
+          "source": "微博热搜",
+          "rank": 3,
+          "hot_value": "756 万",
+          "category": "global",
+          "summary": "中美双方就经贸问题深入沟通，释放管控分歧积极信号。",
+          "opinions": [
+            "关系缓和信号",
+            "愿意坐下来谈"
+          ],
+          "url": "https://www.mofcom.gov.cn/article/news/2026-03/20260317001.shtml"
+        },
+        {
+          "title": "AI 大厂月薪 3 万疯抢文科生",
+          "source": "微博热搜",
+          "rank": 4,
+          "hot_value": "687 万",
+          "category": "finance",
+          "summary": "就业市场新趋势，AI 公司高薪招聘文科生，打破文科就业难刻板印象。",
+          "opinions": [
+            "文科生春天来了",
+            "文理融合是未来"
+          ],
+          "url": "https://finance.sina.com.cn/jjxw/2026-03-17/doc-ineimkqw3456789.shtml"
+        },
+        {
+          "title": "广东回南天概率大幅降低",
+          "source": "微博热搜",
+          "rank": 5,
+          "hot_value": "534 万",
+          "category": "other",
+          "summary": "未来一周气温平稳，潮湿天气缓解，民众生活出行更加便利。",
+          "opinions": [
+            "终于不用返潮了",
+            "天气给力"
+          ],
+          "url": "https://weather.news.qq.com/a/20260317/001234.htm"
+        },
+        {
+          "title": "李湘账号解禁",
+          "source": "微博热搜",
+          "rank": 6,
+          "hot_value": "498 万",
+          "category": "entertainment",
+          "summary": "李湘微博、抖音、小红书恢复关注功能，但微博内容已清空。",
+          "opinions": [
+            "终于解封了",
+            "期待回归"
+          ],
+          "url": "https://ent.ifeng.com/c/8abcDEF123456"
+        },
+        {
+          "title": "瞿颖好大的雨梗引爆全网",
+          "source": "微博热搜",
+          "rank": 7,
+          "hot_value": "456 万",
+          "category": "entertainment",
+          "summary": "瞿颖魔性台词衍生表情包，全平台播放量破 18 亿。",
+          "opinions": [
+            "太魔性了",
+            "笑死我了"
+          ],
+          "url": "https://ent.sina.com.cn/s/m/2026-03-17/doc-imeipzr9876543.shtml"
+        },
+        {
+          "title": "深圳落地机器人保洁服务",
+          "source": "微博热搜",
+          "rank": 8,
+          "hot_value": "423 万",
+          "category": "tech",
+          "summary": "深圳率先落地机器人上门保洁服务，科技与生活结合。",
+          "opinions": [
+            "科技感满满",
+            "以后不用自己打扫了"
+          ],
+          "url": "https://tech.163.com/26/0317/12/I5K6L7M800098ABC.html"
+        },
+        {
+          "title": "金价大跌黄金售罄",
+          "source": "微博热搜",
+          "rank": 9,
+          "hot_value": "398 万",
+          "category": "finance",
+          "summary": "金价大幅下跌引发抢购潮，某品牌黄金饰品 1 分钟售罄。",
+          "opinions": [
+            "赶紧抄底",
+            "手慢无"
+          ],
+          "url": "https://finance.people.com.cn/n1/2026/0317/c1004-40123456.html"
+        },
+        {
+          "title": "英伟达发布 1.6nm 芯片",
+          "source": "微博热搜",
+          "rank": 10,
+          "hot_value": "367 万",
+          "category": "tech",
+          "summary": "GTC 2026 大会发布 1.6nm 芯片，性能提升 300%，重塑 AI 算力格局。",
+          "opinions": [
+            "性能怪兽",
+            "AI 产品要起飞了"
+          ],
+          "url": "https://www.ithome.com/0/789/012.htm"
+        }
+      ]
+    },
+    {
+      "id": "stock",
+      "title": "股市榜",
       "description": "重点关注：稀土、商业航天、半导体、芯片、银行",
       "items": [
-        {"title": "稀土永磁板块集体大涨", "source": "微博热搜", "rank": 1, "hot_value": "534万", "category": "stock"},
-        {"title": "商业航天概念股爆发", "source": "百度热搜", "rank": 2, "hot_value": "498万", "category": "stock"},
-        {"title": "半导体设备进口替代加速", "source": "头条热榜", "rank": 3, "hot_value": "456万", "category": "stock"},
-        {"title": "中芯国际发布先进制程进展", "source": "微博热搜", "rank": 4, "hot_value": "423万", "category": "stock"},
-        {"title": "银行股午后拉升多股涨停", "source": "百度热搜", "rank": 5, "hot_value": "398万", "category": "stock"},
-        {"title": "北向资金净流入超百亿", "source": "头条热榜", "rank": 6, "hot_value": "367万", "category": "stock"},
-        {"title": "芯片ETF单日申购破纪录", "source": "微博热搜", "rank": 7, "hot_value": "334万", "category": "stock"}
+        {
+          "title": "稀土永磁板块集体大涨",
+          "source": "微博热搜",
+          "rank": 1,
+          "hot_value": "534 万",
+          "category": "stock",
+          "summary": "受出口管制政策影响，稀土永磁概念股全线爆发，北方稀土、中国稀土等多股涨停。",
+          "opinions": [
+            "战略资源价值凸显",
+            "看好长期行情"
+          ],
+          "url": "https://finance.sina.com.cn/stock/2026-03-17/rare-earth-surge.shtml",
+          "deep_article": {
+            "title": "稀土永磁板块暴涨背后",
+            "content": "2026 年 3 月 17 日，稀土永磁板块迎来爆发式上涨，北方稀土涨停报收 28.45 元，中国稀土涨超 15%。催化剂包括工信部发布稀土管理条例、新能源汽车需求持续增长、人形机器人量产在即。中信证券建议关注具备资源禀赋和冶炼技术的龙头企业。",
+            "url": "https://instreet.coze.site/article/rare-earth-2026"
+          }
+        },
+        {
+          "title": "商业航天概念股爆发",
+          "source": "百度热搜",
+          "rank": 2,
+          "hot_value": "498 万",
+          "category": "stock",
+          "summary": "神 21 出舱成功带动商业航天概念，多只个股创历史新高。",
+          "opinions": [
+            "万亿赛道开启",
+            "中国版 SpaceX 崛起"
+          ],
+          "url": "https://finance.eastmoney.com/a/202603172345.html"
+        },
+        {
+          "title": "半导体设备进口替代加速",
+          "source": "头条热榜",
+          "rank": 3,
+          "hot_value": "456 万",
+          "category": "stock",
+          "summary": "中微公司、北方华创订单爆满，国产设备市占率突破 30%。",
+          "opinions": [
+            "卡脖子问题缓解",
+            "国产替代是大势所趋"
+          ],
+          "url": "https://tech.sina.com.cn/roll/2026-03-17/semiconductor-equipment.shtml"
+        },
+        {
+          "title": "中芯国际发布先进制程进展",
+          "source": "微博热搜",
+          "rank": 4,
+          "hot_value": "423 万",
+          "category": "stock",
+          "summary": "中芯国际宣布 7nm 良率提升至 85%，客户导入顺利。",
+          "opinions": [
+            "中国芯重大突破",
+            "不再被卡脖子"
+          ],
+          "url": "https://www.smics.com/news/2026-03-17"
+        },
+        {
+          "title": "银行股午后拉升多股涨停",
+          "source": "百度热搜",
+          "rank": 5,
+          "hot_value": "398 万",
+          "category": "stock",
+          "summary": "降准利好释放，银行板块集体走强，宁波银行、招商银行涨停。",
+          "opinions": [
+            "估值修复行情",
+            "高股息吸引力强"
+          ],
+          "url": "https://finance.people.com.cn/bank/2026-03-17.shtml"
+        },
+        {
+          "title": "北向资金净流入超百亿",
+          "source": "头条热榜",
+          "rank": 6,
+          "hot_value": "367 万",
+          "category": "stock",
+          "summary": "外资持续加仓 A 股，单日净流入 156 亿元创年内新高。",
+          "opinions": [
+            "外资看好中国市场",
+            "聪明钱在行动"
+          ],
+          "url": "https://www.stcn.com/article/detail/1234567.html"
+        },
+        {
+          "title": "芯片 ETF 单日申购破纪录",
+          "source": "微博热搜",
+          "rank": 7,
+          "hot_value": "334 万",
+          "category": "stock",
+          "summary": "芯片主题 ETF 单日净申购超 50 亿份，投资者热情高涨。",
+          "opinions": [
+            "散户也在抢筹",
+            "半导体周期反转"
+          ],
+          "url": "https://fund.eastmoney.com/a/20260317chip-etf.html"
+        }
       ]
     },
-    "tech": {
-      "description": "重点关注：大模型、AI、机器人、龙虾养殖",
+    {
+      "id": "tech",
+      "title": "科技榜",
+      "description": "重点关注：大模型、AI、机器人、智慧农业",
       "items": [
-        {"title": "GPT-5正式发布能力超预期", "source": "微博热搜", "rank": 1, "hot_value": "678万", "category": "tech"},
-        {"title": "国产大模型Kimi用户破亿", "source": "百度热搜", "rank": 2, "hot_value": "567万", "category": "tech"},
-        {"title": "深圳落地机器人保洁服务", "source": "微博热搜", "rank": 3, "hot_value": "423万", "category": "tech"},
-        {"title": "人形机器人量产在即", "source": "头条热榜", "rank": 4, "hot_value": "389万", "category": "tech"},
-        {"title": "AI Agent成为投资新热点", "source": "微博热搜", "rank": 5, "hot_value": "356万", "category": "tech"},
-        {"title": "智慧农业：龙虾养殖用上AI", "source": "百度热搜", "rank": 6, "hot_value": "312万", "category": "tech"},
-        {"title": "具身智能迎来突破性进展", "source": "头条热榜", "rank": 7, "hot_value": "289万", "category": "tech"}
+        {
+          "title": "GPT-5 正式发布能力超预期",
+          "source": "微博热搜",
+          "rank": 1,
+          "hot_value": "678 万",
+          "category": "tech",
+          "summary": "OpenAI 发布 GPT-5，推理能力提升 10 倍，支持多模态实时交互。",
+          "opinions": [
+            "AGI 又近了一步",
+            "打工人要失业了"
+          ],
+          "url": "https://tech.163.com/26/0317/gpt5-release.html",
+          "deep_article": {
+            "title": "GPT-5 深度评测",
+            "content": "2026 年 3 月 17 日，OpenAI 正式发布 GPT-5。核心升级包括推理能力提升 10 倍、原生多模态、上下文窗口扩大至 100 万 tokens、支持实时语音对话。实测通过律师资格考试得分 92 分，可独立编写完整 Web 应用。部分专家警告可能被用于生成虚假信息。",
+            "url": "https://instreet.coze.site/article/gpt5-review"
+          }
+        },
+        {
+          "title": "国产大模型 Kimi 用户破亿",
+          "source": "百度热搜",
+          "rank": 2,
+          "hot_value": "567 万",
+          "category": "tech",
+          "summary": "月之暗面 Kimi 智能助手用户突破 1 亿，成为首个破亿的国产 AI 助手。",
+          "opinions": [
+            "国产之光",
+            "长文本处理无敌"
+          ],
+          "url": "https://tech.sina.com.cn/i/2026-03-17/kimi-100m-users.shtml"
+        },
+        {
+          "title": "深圳落地机器人保洁服务",
+          "source": "微博热搜",
+          "rank": 3,
+          "hot_value": "423 万",
+          "category": "tech",
+          "summary": "深圳率先落地机器人上门保洁服务，科技与生活结合。",
+          "opinions": [
+            "科技感满满",
+            "以后不用自己打扫了"
+          ],
+          "url": "https://tech.163.com/26/0317/12/I5K6L7M800098ABC.html"
+        },
+        {
+          "title": "人形机器人量产在即",
+          "source": "头条热榜",
+          "rank": 4,
+          "hot_value": "389 万",
+          "category": "tech",
+          "summary": "特斯拉 Optimus、小米 CyberOne 宣布 2026 年底量产交付。",
+          "opinions": [
+            "科幻变现实",
+            "百万年薪请不起"
+          ],
+          "url": "https://auto.163.com/26/0317/humanoid-robot.html"
+        },
+        {
+          "title": "AI Agent 成为投资新热点",
+          "source": "微博热搜",
+          "rank": 5,
+          "hot_value": "356 万",
+          "category": "tech",
+          "summary": "红杉、高瓴等顶级 VC 密集布局 AI Agent 赛道。",
+          "opinions": [
+            "下一个独角兽",
+            "Agent 会取代 APP 吗"
+          ],
+          "url": "https://36kr.com/p/2026031701-agent-investment.html"
+        },
+        {
+          "title": "智慧农业：龙虾养殖用上 AI",
+          "source": "百度热搜",
+          "rank": 6,
+          "hot_value": "312 万",
+          "category": "tech",
+          "summary": "湖北潜江引入 AI 水质监测、自动投喂系统，龙虾产量提升 30%。",
+          "opinions": [
+            "科技兴农典范",
+            "龙虾也智能了"
+          ],
+          "url": "https://news.xinhuanet.com/tech/2026-03-17/ai-crayfish.htm"
+        },
+        {
+          "title": "具身智能迎来突破性进展",
+          "source": "头条热榜",
+          "rank": 7,
+          "hot_value": "289 万",
+          "category": "tech",
+          "summary": "斯坦福团队发表 Nature 论文，机器人学会自主规划复杂任务。",
+          "opinions": [
+            "机器人有大脑了",
+            "通用机器人时代来临"
+          ],
+          "url": "https://www.ithome.com/0/789/embodied-ai.htm"
+        }
       ]
     },
-    "finance": [
-      {"title": "AI大厂月薪3万疯抢文科生", "source": "微博热搜", "rank": 1, "hot_value": "687万", "category": "finance"},
-      {"title": "金价大跌黄金售罄", "source": "微博热搜", "rank": 2, "hot_value": "398万", "category": "finance"},
-      {"title": "央行开展510亿逆回购", "source": "百度热搜", "rank": 3, "hot_value": "356万", "category": "finance"},
-      {"title": "房地产政策持续放松", "source": "头条热榜", "rank": 4, "hot_value": "312万", "category": "finance"},
-      {"title": "新能源汽车销量创新高", "source": "微博热搜", "rank": 5, "hot_value": "289万", "category": "finance"}
-    ],
-    "politics": [
-      {"title": "国务院部署稳经济政策", "source": "微博热搜", "rank": 1, "hot_value": "523万", "category": "politics"},
-      {"title": "两会代表热议科技创新", "source": "百度热搜", "rank": 2, "hot_value": "412万", "category": "politics"},
-      {"title": "多省市出台人才引进新政", "source": "头条热榜", "rank": 3, "hot_value": "356万", "category": "politics"},
-      {"title": "环保督察组进驻多地", "source": "微博热搜", "rank": 4, "hot_value": "298万", "category": "politics"},
-      {"title": "乡村振兴典型案例发布", "source": "百度热搜", "rank": 5, "hot_value": "267万", "category": "politics"}
-    ],
-    "global": [
-      {"title": "神21乘组圆满完成第二次出舱活动", "source": "微博热搜", "rank": 1, "hot_value": "987万", "category": "global"},
-      {"title": "莫斯科遭遇今年最大规模无人机袭击", "source": "微博热搜", "rank": 2, "hot_value": "892万", "category": "global"},
-      {"title": "中美经贸磋商在巴黎举行", "source": "微博热搜", "rank": 3, "hot_value": "756万", "category": "global"},
-      {"title": "欧盟通过新一轮对俄制裁", "source": "百度热搜", "rank": 4, "hot_value": "534万", "category": "global"},
-      {"title": "朝鲜半岛局势持续紧张", "source": "头条热榜", "rank": 5, "hot_value": "489万", "category": "global"},
-      {"title": "美联储释放降息信号", "source": "微博热搜", "rank": 6, "hot_value": "445万", "category": "global"}
-    ],
-    "entertainment": [
-      {"title": "李湘账号解禁", "source": "微博热搜", "rank": 1, "hot_value": "498万", "category": "entertainment"},
-      {"title": "瞿颖好大的雨梗引爆全网", "source": "微博热搜", "rank": 2, "hot_value": "456万", "category": "entertainment"},
-      {"title": "某知名演员官宣新剧定档", "source": "头条热榜", "rank": 3, "hot_value": "378万", "category": "entertainment"},
-      {"title": "热门综艺收视率破纪录", "source": "微博热搜", "rank": 4, "hot_value": "334万", "category": "entertainment"},
-      {"title": "歌手演唱会门票秒罄", "source": "百度热搜", "rank": 5, "hot_value": "289万", "category": "entertainment"}
-    ],
-    "sports": [
-      {"title": "中国女篮84-74战胜捷克", "source": "微博热搜", "rank": 1, "hot_value": "456万", "category": "sports"},
-      {"title": "F1中国站门票开售", "source": "百度热搜", "rank": 2, "hot_value": "378万", "category": "sports"},
-      {"title": "国乒包揽世界杯冠亚军", "source": "头条热榜", "rank": 3, "hot_value": "345万", "category": "sports"},
-      {"title": "中超联赛开幕战爆满", "source": "微博热搜", "rank": 4, "hot_value": "298万", "category": "sports"},
-      {"title": "谷爱凌再获极限运动冠军", "source": "百度热搜", "rank": 5, "hot_value": "267万", "category": "sports"}
-    ]
-  }
+    {
+      "id": "finance",
+      "title": "财经榜",
+      "description": "",
+      "items": [
+        {
+          "title": "AI 大厂月薪 3 万疯抢文科生",
+          "source": "微博热搜",
+          "rank": 1,
+          "hot_value": "687 万",
+          "category": "finance",
+          "summary": "就业市场新趋势，AI 公司高薪招聘文科生，打破文科就业难刻板印象。",
+          "opinions": [
+            "文科生春天来了",
+            "文理融合是未来"
+          ],
+          "url": "https://finance.sina.com.cn/jjxw/2026-03-17/doc-ineimkqw3456789.shtml"
+        },
+        {
+          "title": "金价大跌黄金售罄",
+          "source": "微博热搜",
+          "rank": 2,
+          "hot_value": "398 万",
+          "category": "finance",
+          "summary": "金价大幅下跌引发抢购潮，某品牌黄金饰品 1 分钟售罄。",
+          "opinions": [
+            "赶紧抄底",
+            "手慢无"
+          ],
+          "url": "https://finance.people.com.cn/n1/2026/0317/c1004-40123456.html"
+        },
+        {
+          "title": "央行开展 510 亿逆回购",
+          "source": "百度热搜",
+          "rank": 3,
+          "hot_value": "356 万",
+          "category": "finance",
+          "summary": "央行通过逆回购向市场投放流动性，维护资金面平稳。",
+          "opinions": [
+            "货币政策宽松",
+            "利好股市债市"
+          ],
+          "url": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/20260317.html"
+        },
+        {
+          "title": "房地产政策持续放松",
+          "source": "头条热榜",
+          "rank": 4,
+          "hot_value": "312 万",
+          "category": "finance",
+          "summary": "多城市取消限购、降低首付比例，促进房地产市场回暖。",
+          "opinions": [
+            "楼市拐点将至",
+            "刚需可以上车了"
+          ],
+          "url": "https://house.sina.com.cn/news/2026-03-17/real-estate-policy.shtml"
+        },
+        {
+          "title": "新能源汽车销量创新高",
+          "source": "微博热搜",
+          "rank": 5,
+          "hot_value": "289 万",
+          "category": "finance",
+          "summary": "2 月新能源车零售渗透率突破 45%，比亚迪、理想领跑。",
+          "opinions": [
+            "电动化不可逆转",
+            "油车真的要淘汰了"
+          ],
+          "url": "https://auto.163.com/26/0317/ev-sales-record.html"
+        }
+      ]
+    },
+    {
+      "id": "politics",
+      "title": "时政榜",
+      "description": "",
+      "items": [
+        {
+          "title": "国务院部署稳经济政策",
+          "source": "微博热搜",
+          "rank": 1,
+          "hot_value": "523 万",
+          "category": "politics",
+          "summary": "国务院常务会议部署更大力度稳经济政策措施，包括减税降费、扩大内需等。",
+          "opinions": [
+            "政策工具箱充足",
+            "经济信心增强"
+          ],
+          "url": "https://www.gov.cn/guowuyuan/2026-03/17/content_5712345.htm",
+          "deep_article": {
+            "title": "国务院稳经济一揽子政策详解",
+            "content": "2026 年 3 月 17 日，国务院常务会议部署新一批稳经济政策措施。要点包括小微企业所得税减免延长至 2027 年底、安排 3000 亿专项资金支持消费品以旧换新、对吸纳高校毕业生企业给予社保补贴、新增专项债额度 1.2 万亿元。A 股应声上涨，上证指数收复 4050 点。",
+            "url": "https://instreet.coze.site/article/state-council-stimulus"
+          }
+        },
+        {
+          "title": "两会代表热议科技创新",
+          "source": "百度热搜",
+          "rank": 2,
+          "hot_value": "412 万",
+          "category": "politics",
+          "summary": "两会期间，科技创新成为代表委员讨论焦点。",
+          "opinions": [
+            "创新是第一动力",
+            "加大研发投入"
+          ],
+          "url": "https://lianghui.people.com.cn/2026/0317/tech-innovation.html"
+        },
+        {
+          "title": "多省市出台人才引进新政",
+          "source": "头条热榜",
+          "rank": 3,
+          "hot_value": "356 万",
+          "category": "politics",
+          "summary": "上海、深圳等地放宽落户限制，吸引高层次人才。",
+          "opinions": [
+            "抢人大战升级",
+            "人才是核心竞争力"
+          ],
+          "url": "https://www.rmzxb.com.cn/c/2026-03-17/talent-policy.shtml"
+        },
+        {
+          "title": "环保督察组进驻多地",
+          "source": "微博热搜",
+          "rank": 4,
+          "hot_value": "298 万",
+          "category": "politics",
+          "summary": "中央环保督察组进驻河北、山西等省份，开展为期一个月督察。",
+          "opinions": [
+            "绿水青山就是金山银山",
+            "环保不能松懈"
+          ],
+          "url": "https://www.mee.gov.cn/ywdt/hbjdgz/202603/t20260317.html"
+        },
+        {
+          "title": "乡村振兴典型案例发布",
+          "source": "百度热搜",
+          "rank": 5,
+          "hot_value": "267 万",
+          "category": "politics",
+          "summary": "农业农村部发布 20 个乡村振兴典型案例，推广成功经验。",
+          "opinions": [
+            "共同富裕在路上",
+            "农村大有可为"
+          ],
+          "url": "http://www.moa.gov.cn/ztzl/xczx/202603/t20260317.htm"
+        }
+      ]
+    },
+    {
+      "id": "global",
+      "title": "全球榜",
+      "description": "",
+      "items": [
+        {
+          "title": "神 21 乘组圆满完成第二次出舱活动",
+          "source": "微博热搜",
+          "rank": 1,
+          "hot_value": "987 万",
+          "category": "global",
+          "summary": "中国航天员张陆、武飞完成第二次出舱活动，标志着中国空间站建设取得重要进展。",
+          "opinions": [
+            "中国航天再进一步",
+            "太空家园越建越稳"
+          ],
+          "url": "https://news.cctv.com/2026/03/17/ARTIshenzhou21_eva.shtml"
+        },
+        {
+          "title": "莫斯科遭遇今年最大规模无人机袭击",
+          "source": "微博热搜",
+          "rank": 2,
+          "hot_value": "892 万",
+          "category": "global",
+          "summary": "3 月 14-16 日连续三昼夜遭打击，俄军击落 181 架无人机，俄乌冲突本土对抗强度刷新。",
+          "opinions": [
+            "战争打到本土深处",
+            "油价又要涨了"
+          ],
+          "url": "https://www.thepaper.cn/newsDetail_forward_26789012"
+        },
+        {
+          "title": "中美经贸磋商在巴黎举行",
+          "source": "微博热搜",
+          "rank": 3,
+          "hot_value": "756 万",
+          "category": "global",
+          "summary": "中美双方就经贸问题深入沟通，释放管控分歧积极信号。",
+          "opinions": [
+            "关系缓和信号",
+            "愿意坐下来谈"
+          ],
+          "url": "https://www.mofcom.gov.cn/article/news/2026-03/20260317001.shtml"
+        },
+        {
+          "title": "欧盟通过新一轮对俄制裁",
+          "source": "百度热搜",
+          "rank": 4,
+          "hot_value": "534 万",
+          "category": "global",
+          "summary": "欧盟成员国一致通过第 15 轮对俄制裁方案。",
+          "opinions": [
+            "制裁效果有限",
+            "欧洲自身也受伤"
+          ],
+          "url": "https://world.huanqiu.com/article/4JkLmN8pQr2"
+        },
+        {
+          "title": "朝鲜半岛局势持续紧张",
+          "source": "头条热榜",
+          "rank": 5,
+          "hot_value": "489 万",
+          "category": "global",
+          "summary": "朝韩边境军事对峙升级，国际社会呼吁克制。",
+          "opinions": [
+            "半岛无核化任重道远",
+            "对话才是出路"
+          ],
+          "url": "https://world.people.com.cn/n1/2026/0317/c1002-40123789.html"
+        },
+        {
+          "title": "美联储释放降息信号",
+          "source": "微博热搜",
+          "rank": 6,
+          "hot_value": "445 万",
+          "category": "global",
+          "summary": "美联储主席鲍威尔暗示可能提前降息，全球市场应声上涨。",
+          "opinions": [
+            "放水预期升温",
+            "美元要贬值了"
+          ],
+          "url": "https://finance.sina.com.cn/world/2026-03-17/fed-rate-cut.shtml"
+        }
+      ]
+    },
+    {
+      "id": "entertainment",
+      "title": "娱乐榜",
+      "description": "",
+      "items": [
+        {
+          "title": "李湘账号解禁",
+          "source": "微博热搜",
+          "rank": 1,
+          "hot_value": "498 万",
+          "category": "entertainment",
+          "summary": "李湘微博、抖音、小红书恢复关注功能，但微博内容已清空。",
+          "opinions": [
+            "终于解封了",
+            "期待回归"
+          ],
+          "url": "https://ent.ifeng.com/c/8abcDEF123456"
+        },
+        {
+          "title": "瞿颖好大的雨梗引爆全网",
+          "source": "微博热搜",
+          "rank": 2,
+          "hot_value": "456 万",
+          "category": "entertainment",
+          "summary": "瞿颖魔性台词衍生表情包，全平台播放量破 18 亿。",
+          "opinions": [
+            "太魔性了",
+            "笑死我了"
+          ],
+          "url": "https://ent.sina.com.cn/s/m/2026-03-17/doc-imeipzr9876543.shtml"
+        },
+        {
+          "title": "某知名演员官宣新剧定档",
+          "source": "头条热榜",
+          "rank": 3,
+          "hot_value": "378 万",
+          "category": "entertainment",
+          "summary": "古装大剧正式定档 3 月 25 日，主演阵容豪华。",
+          "opinions": [
+            "期待播出",
+            "演员演技在线"
+          ],
+          "url": "https://ent.qq.com/a/20260317/012345.htm"
+        },
+        {
+          "title": "热门综艺收视率破纪录",
+          "source": "微博热搜",
+          "rank": 4,
+          "hot_value": "334 万",
+          "category": "entertainment",
+          "summary": "歌手 2026 首播收视率达 3.5%，创五年来新高。",
+          "opinions": [
+            "音综天花板",
+            "神仙打架"
+          ],
+          "url": "https://ent.163.com/26/0317/singer2026-rating.html"
+        },
+        {
+          "title": "歌手演唱会门票秒罄",
+          "source": "百度热搜",
+          "rank": 5,
+          "hot_value": "289 万",
+          "category": "entertainment",
+          "summary": "周杰伦世界巡演北京站开票即售罄，黄牛票炒至万元。",
+          "opinions": [
+            "一票难求",
+            "青春回忆"
+          ],
+          "url": "https://yue.qq.com/a/20260317/concert-tickets.htm"
+        }
+      ]
+    },
+    {
+      "id": "sports",
+      "title": "体育榜",
+      "description": "",
+      "items": [
+        {
+          "title": "中国女篮 84-74 战胜捷克",
+          "source": "微博热搜",
+          "rank": 1,
+          "hot_value": "456 万",
+          "category": "sports",
+          "summary": "女篮奥运预选赛，中国队 10 分优势击败捷克，锁定奥运席位。",
+          "opinions": [
+            "女篮姑娘好样的",
+            "女篮比男篮靠谱多了"
+          ],
+          "url": "https://sports.sina.com.cn/basketball/women/2026-03-17/china-czech.shtml",
+          "deep_article": {
+            "title": "中国女篮挺进奥运会",
+            "content": "2026 年 3 月 17 日，中国女篮在奥运预选赛中以 84-74 战胜捷克队，提前锁定巴黎奥运会参赛资格。李梦砍下全场最高 28 分，韩旭贡献 15 分 12 篮板的两双数据。主帅郑薇采用小快灵打法，利用速度优势撕裂对手防线。中国队与美国、澳大利亚、法国同组。",
+            "url": "https://instreet.coze.site/article/china-womens-basketball"
+          }
+        },
+        {
+          "title": "F1 中国站门票开售",
+          "source": "百度热搜",
+          "rank": 2,
+          "hot_value": "378 万",
+          "category": "sports",
+          "summary": "2026 赛季 F1 中国大奖赛门票正式开售，周冠宇主场作战引关注。",
+          "opinions": [
+            "终于等到 F1 回归",
+            "支持周冠宇"
+          ],
+          "url": "https://sports.163.com/26/0317/f1-china-tickets.html"
+        },
+        {
+          "title": "国乒包揽世界杯冠亚军",
+          "source": "头条热榜",
+          "rank": 3,
+          "hot_value": "345 万",
+          "category": "sports",
+          "summary": "乒乓球世界杯决赛，樊振东、王楚钦会师决赛。",
+          "opinions": [
+            "国乒统治力太强",
+            "内战比外战激烈"
+          ],
+          "url": "https://sports.qq.com/a/20260317/tabletennis-worldcup.htm"
+        },
+        {
+          "title": "中超联赛开幕战爆满",
+          "source": "微博热搜",
+          "rank": 4,
+          "hot_value": "298 万",
+          "category": "sports",
+          "summary": "2026 中超联赛开幕，北京工体涌进 6 万名球迷。",
+          "opinions": [
+            "球市火爆",
+            "中国足球有希望"
+          ],
+          "url": "https://sports.sina.com.cn/china/j/2026-03-17/csl-opening.shtml"
+        },
+        {
+          "title": "谷爱凌再获极限运动冠军",
+          "source": "百度热搜",
+          "rank": 5,
+          "hot_value": "267 万",
+          "category": "sports",
+          "summary": "谷爱凌在 X Games 女子 U 型场地技巧项目中夺冠。",
+          "opinions": [
+            "青蛙公主太厉害了",
+            "天才少女"
+          ],
+          "url": "https://sports.163.com/26/0317/gu-ailing-xgames.html"
+        }
+      ]
+    }
+  ]
 }

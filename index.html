@@ -49,24 +49,9 @@
       border-top: 1px solid #f1f5f9;
     }
     .detail-panel.expanded {
-      max-height: 500px;
+      max-height: 800px;
       padding: 16px 20px;
     }
-    .category-badge {
-      display: inline-block;
-      padding: 2px 8px;
-      border-radius: 4px;
-      font-size: 11px;
-      font-weight: 500;
-      margin-left: 8px;
-    }
-    .badge-finance { background: #dbeafe; color: #1e40af; }
-    .badge-politics { background: #fee2e2; color: #991b1b; }
-    .badge-global { background: #d1fae5; color: #065f46; }
-    .badge-entertainment { background: #fce7f3; color: #9d174d; }
-    .badge-sports { background: #fef3c7; color: #92400e; }
-    .badge-stock { background: #dcfce7; color: #166534; }
-    .badge-other { background: #f1f5f9; color: #475569; }
     .expand-icon {
       transition: transform 0.2s ease;
     }
@@ -90,13 +75,38 @@
       background: linear-gradient(135deg, #2563eb, #1d4ed8);
       transform: translateY(-1px);
     }
+    .deep-article-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 20px;
+      background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      margin-top: 12px;
+      transition: all 0.2s ease;
+    }
+    .deep-article-link:hover {
+      background: linear-gradient(135deg, #7c3aed, #6d28d9);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3);
+    }
     .section-title {
-      font-size: 18px;
+      font-size: 20px;
       font-weight: 700;
       color: #1f2937;
-      margin: 24px 0 12px 0;
+      margin: 32px 0 8px 0;
       padding-left: 12px;
       border-left: 4px solid #3b82f6;
+    }
+    .section-desc {
+      font-size: 13px;
+      color: #6b7280;
+      margin-bottom: 16px;
+      padding-left: 12px;
     }
   </style>
 </head>
@@ -107,27 +117,10 @@
       <p class="text-gray-500 text-sm" id="update-time">加载中...</p>
     </header>
 
-    <!-- View Toggle -->
-    <div class="flex gap-2 mb-6 justify-center">
-      <button onclick="switchView('all')" id="btn-all" class="px-4 py-2 rounded-full bg-gray-900 text-white font-medium text-sm">
-        📋 综合榜
-      </button>
-      <button onclick="switchView('categories')" id="btn-categories" class="px-4 py-2 rounded-full bg-white text-gray-700 font-medium text-sm border border-gray-200">
-        🏷️ 分类榜
-      </button>
-    </div>
+    <!-- Market Index -->
+    <div id="market-index-container"></div>
 
-    <!-- Category Filter (for all view) -->
-    <div id="filter-bar" class="flex gap-2 mb-6 overflow-x-auto pb-2">
-      <button onclick="filterCategory('all')" class="filter-btn active px-4 py-2 rounded-full bg-gray-900 text-white font-medium text-sm whitespace-nowrap">全部</button>
-      <button onclick="filterCategory('finance')" class="filter-btn px-4 py-2 rounded-full bg-white text-gray-700 font-medium text-sm whitespace-nowrap border border-gray-200">💰 财经</button>
-      <button onclick="filterCategory('politics')" class="filter-btn px-4 py-2 rounded-full bg-white text-gray-700 font-medium text-sm whitespace-nowrap border border-gray-200">🏛️ 时政</button>
-      <button onclick="filterCategory('global')" class="filter-btn px-4 py-2 rounded-full bg-white text-gray-700 font-medium text-sm whitespace-nowrap border border-gray-200">🌍 全球</button>
-      <button onclick="filterCategory('entertainment')" class="filter-btn px-4 py-2 rounded-full bg-white text-gray-700 font-medium text-sm whitespace-nowrap border border-gray-200">🎬 娱乐</button>
-      <button onclick="filterCategory('sports')" class="filter-btn px-4 py-2 rounded-full bg-white text-gray-700 font-medium text-sm whitespace-nowrap border border-gray-200">🏀 体育</button>
-      <button onclick="filterCategory('stock')" class="filter-btn px-4 py-2 rounded-full bg-white text-gray-700 font-medium text-sm whitespace-nowrap border border-gray-200">📈 股市</button>
-    </div>
-
+    <!-- Content -->
     <div id="content" class="space-y-3"></div>
 
     <footer class="mt-8 text-center text-gray-400 text-xs">
@@ -138,8 +131,6 @@
 
   <script>
     let allData = {};
-    let currentView = 'all';
-    let currentFilter = 'all';
 
     function getBeijingDate() {
       const now = new Date();
@@ -166,7 +157,11 @@
         
         allData = await response.json();
         document.getElementById('update-time').textContent = `${allData.date} | 共 ${allData.total || 0} 条`;
-        render();
+        
+        if (allData.market_index && allData.market_index.indices) {
+          renderMarketIndex();
+        }
+        renderSections();
       } catch (error) {
         document.getElementById('content').innerHTML = `
           <div class="text-center py-12 text-gray-500">
@@ -176,95 +171,16 @@
       }
     }
 
-    function switchView(view) {
-      currentView = view;
-      document.getElementById('btn-all').className = view === 'all' 
-        ? 'px-4 py-2 rounded-full bg-gray-900 text-white font-medium text-sm'
-        : 'px-4 py-2 rounded-full bg-white text-gray-700 font-medium text-sm border border-gray-200';
-      document.getElementById('btn-categories').className = view === 'categories'
-        ? 'px-4 py-2 rounded-full bg-gray-900 text-white font-medium text-sm'
-        : 'px-4 py-2 rounded-full bg-white text-gray-700 font-medium text-sm border border-gray-200';
-      
-      document.getElementById('filter-bar').style.display = view === 'all' ? 'flex' : 'none';
-      render();
-    }
-
-    function filterCategory(cat) {
-      currentFilter = cat;
-      document.querySelectorAll('.filter-btn').forEach(btn => {
-        btn.className = btn.textContent.toLowerCase().includes(cat) || (cat === 'all' && btn.textContent === '全部')
-          ? 'filter-btn active px-4 py-2 rounded-full bg-gray-900 text-white font-medium text-sm whitespace-nowrap'
-          : 'filter-btn px-4 py-2 rounded-full bg-white text-gray-700 font-medium text-sm whitespace-nowrap border border-gray-200';
-      });
-      render();
-    }
-
-    function render() {
-      const container = document.getElementById('content');
-      container.innerHTML = '';
-
-      if (currentView === 'all') {
-        const items = allData.all || [];
-        const filtered = currentFilter === 'all' ? items : items.filter(i => i.category === currentFilter);
-        filtered.forEach((item, idx) => renderCard(container, item, idx + 1));
-      } else {
-        // 先渲染大盘指数（如果是股市视图）
-        if (allData.market_index && allData.market_index.indices) {
-          renderMarketIndex(container);
-        }
-        
-        const cats = allData.categories || {};
-        const order = ['stock', 'tech', 'finance', 'politics', 'global', 'sports', 'entertainment'];
-        const names = {
-          stock: '📈 股市', tech: '🤖 科技', finance: '💰 财经', politics: '🏛️ 时政',
-          global: '🌍 全球', sports: '🏀 体育', entertainment: '🎬 娱乐'
-        };
-        const descriptions = {
-          stock: '重点关注：稀土、商业航天、半导体、芯片、银行',
-          tech: '重点关注：大模型、AI、机器人、智慧农业'
-        };
-        
-        order.forEach(cat => {
-          const catData = cats[cat];
-          if (!catData) return;
-          
-          const items = Array.isArray(catData) ? catData : (catData.items || []);
-          if (items.length === 0) return;
-          
-          const title = document.createElement('div');
-          title.className = 'section-title';
-          title.textContent = names[cat] || cat;
-          container.appendChild(title);
-          
-          if (descriptions[cat]) {
-            const desc = document.createElement('p');
-            desc.className = 'text-xs text-gray-500 mb-2 px-2';
-            desc.textContent = descriptions[cat];
-            container.appendChild(desc);
-          }
-          
-          items.forEach((item, idx) => renderCard(container, item, idx + 1, true));
-        });
-      }
-
-      if (container.children.length === 0) {
-        container.innerHTML = `<div class="text-center py-12 text-gray-500"><p>暂无数据</p></div>`;
-      }
-    }
-
-    function renderMarketIndex(container) {
+    function renderMarketIndex() {
+      const container = document.getElementById('market-index-container');
       const indexData = allData.market_index;
-      if (!indexData || !indexData.indices) return;
       
       const card = document.createElement('div');
       card.className = 'bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-4 mb-6 border border-blue-100';
       
       const header = document.createElement('div');
       header.className = 'flex items-center justify-between mb-3';
-      header.innerHTML = `
-        <h3 class="font-bold text-gray-900">📊 A股市场概览</h3>
-        <span class="text-xs text-gray-500">更新时间：${indexData.update_time || ''}</span>
-      `;
+      header.innerHTML = `<h3 class="font-bold text-gray-900">📊 A股市场概览</h3><span class="text-xs text-gray-500">更新时间：${indexData.update_time || ''}</span>`;
       card.appendChild(header);
       
       const grid = document.createElement('div');
@@ -286,44 +202,78 @@
       container.appendChild(card);
     }
 
-    function renderCard(container, item, rank, noDetail = false) {
+    function renderSections() {
+      const container = document.getElementById('content');
+      container.innerHTML = '';
+
+      const sections = allData.sections || [];
+      
+      sections.forEach(section => {
+        // Section title
+        const title = document.createElement('div');
+        title.className = 'section-title';
+        title.textContent = section.title;
+        container.appendChild(title);
+        
+        // Section description
+        if (section.description) {
+          const desc = document.createElement('p');
+          desc.className = 'section-desc';
+          desc.textContent = section.description;
+          container.appendChild(desc);
+        }
+        
+        // Items
+        const items = section.items || [];
+        items.forEach((item, idx) => renderCard(container, item, idx + 1));
+      });
+    }
+
+    function renderCard(container, item, rank) {
       const card = document.createElement('div');
-      card.className = `hotspot-card category-${item.category || 'other'}`;
+      card.className = 'hotspot-card';
       
       const rankClass = rank <= 3 ? `rank-${rank}` : 'rank-other';
-      const badgeClass = `badge-${item.category || 'other'}`;
-      const categoryNames = {
-        finance: '财经', politics: '时政', global: '全球',
-        entertainment: '娱乐', sports: '体育', stock: '股市', other: '其他'
-      };
       
       card.innerHTML = `
-        <div class="hotspot-header" onclick="${noDetail ? '' : `toggleDetail(this)`}">
+        <div class="hotspot-header" onclick="toggleDetail(this)">
           <div class="rank-badge ${rankClass}">${rank}</div>
           <div class="flex-1 min-w-0">
             <div class="flex items-center gap-2 flex-wrap">
               <h3 class="text-gray-900 font-medium text-base">${escapeHtml(item.title)}</h3>
-              <span class="category-badge ${badgeClass}">${categoryNames[item.category] || '其他'}</span>
             </div>
             <div class="flex items-center gap-3 mt-1 text-xs text-gray-400">
               <span>${item.source}</span>
               ${item.hot_value ? `<span>🔥 ${item.hot_value}</span>` : ''}
-              ${!noDetail && item.detail ? '<span class="expand-icon">▼</span>' : ''}
+              <span class="expand-icon">▼</span>
             </div>
           </div>
         </div>
-        ${!noDetail && item.detail ? `
-          <div class="detail-panel">
-            ${item.detail.summary ? `<div class="mb-3"><p class="text-sm text-gray-600 leading-relaxed">${escapeHtml(item.detail.summary)}</p></div>` : ''}
-            ${item.detail.opinions && item.detail.opinions.length > 0 ? `
-              <div class="mb-3">
-                <p class="text-xs text-gray-400 mb-1">💬 网友观点</p>
-                <div class="flex flex-wrap gap-2">
-                  ${item.detail.opinions.map(op => `<span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">${escapeHtml(op)}</span>`).join('')}
-                </div>
-              </div>` : ''}
-            ${item.detail.url ? `<a href="${item.detail.url}" target="_blank" class="news-link">查看详情 →</a>` : ''}
-          </div>` : ''}
+        <div class="detail-panel">
+          ${item.summary ? `
+            <div class="mb-3">
+              <p class="text-sm text-gray-600 leading-relaxed">${escapeHtml(item.summary)}</p>
+            </div>
+          ` : ''}
+          ${item.opinions && item.opinions.length > 0 ? `
+            <div class="mb-3">
+              <p class="text-xs text-gray-400 mb-1">💬 网络舆情</p>
+              <div class="flex flex-wrap gap-2">
+                ${item.opinions.map(op => `<span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">${escapeHtml(op)}</span>`).join('')}
+              </div>
+            </div>
+          ` : ''}
+          ${item.url ? `
+            <a href="${item.url}" target="_blank" class="news-link">
+              📰 查看新闻报道
+            </a>
+          ` : ''}
+          ${item.deep_article ? `
+            <a href="${item.deep_article.url}" target="_blank" class="deep-article-link">
+              📖 阅读深度解读：${escapeHtml(item.deep_article.title)}
+            </a>
+          ` : ''}
+        </div>
       `;
       container.appendChild(card);
     }
