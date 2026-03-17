@@ -22,10 +22,16 @@ SOURCES=(
 FINANCE_KW="股市 A股 港股 美股 基金 金融 银行 央行 利率 经济 GDP 通胀 财经 证券 期货 比特币 加密 投资 融资 上市 财报 理财 债券 外汇 人民币 美元 汇率"
 POLITICS_KW="政策 国务院 两会 人大 政协 政府 中央 部委 省委 市委 改革 立法 法规 纪委 反腐 巡视 干部 任命 选举 会议 视察 讲话 批示"
 GLOBAL_KW="美国 俄罗斯 乌克兰 欧盟 日本 韩国 朝鲜 中东 以色列 巴勒斯坦 伊朗 欧洲 北约 联合国 关税 制裁 贸易战 外交 访问 会谈 峰会 G7 G20 APEC 战争 冲突 边境 领土 国际 海外"
+ENTERTAINMENT_KW="明星 演员 歌手 电影 电视剧 综艺 娱乐 八卦 颜值 恋爱 结婚 离婚 绯闻 网红 直播 抖音 微博热搜 偶像 爱豆 粉丝 CP 豆瓣 影视 音乐 演唱会 综艺节目 真人秀 明星八卦 爆料"
 
 # 分类函数
 categorize() {
   local title="$1"
+  
+  # 先检查娱乐八卦（优先级最高，避免被其他分类覆盖）
+  for kw in $ENTERTAINMENT_KW; do
+    [[ "$title" == *"$kw"* ]] && echo "entertainment" && return
+  done
   
   for kw in $FINANCE_KW; do
     [[ "$title" == *"$kw"* ]] && echo "finance" && return
