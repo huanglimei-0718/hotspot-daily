@@ -1,7 +1,7 @@
 {
   "date": "2026-03-17",
-  "updated": "2026-03-17T16:45:00+08:00",
-  "total": 18,
+  "updated": "2026-03-17T18:20:00+08:00",
+  "total": 8,
   "items": [
     {
       "title": "央行宣布降准0.5个百分点",
@@ -11,12 +11,8 @@
       "category": "finance",
       "detail": {
         "summary": "中国人民银行决定于3月27日下调金融机构存款准备金率0.5个百分点，预计释放长期资金约1.2万亿元，支持实体经济发展。",
-        "opinions": [
-          "利好股市，流动性增加",
-          "降低企业融资成本",
-          "房地产市场或受提振"
-        ],
-        "url": "https://news.example.com/central-bank-rRR-cut"
+        "opinions": ["利好股市，流动性增加", "降低企业融资成本", "房地产市场或受提振"],
+        "url": "https://news.sina.com.cn"
       }
     },
     {
@@ -27,7 +23,7 @@
       "category": "finance",
       "detail": {
         "summary": "受央行降准消息影响，A股三大指数集体高开，沪指涨1.2%，深成指涨1.5%，创业板指涨1.8%。",
-        "url": "https://news.example.com/astock-opening"
+        "url": "https://finance.sina.com.cn"
       }
     },
     {
@@ -38,12 +34,8 @@
       "category": "finance",
       "detail": {
         "summary": "证监会发布《证券市场程序化交易管理规定》，对量化交易实施严格监管，要求报告交易策略、限制高频交易频率。",
-        "opinions": [
-          "有利于市场公平，保护散户利益",
-          "量化机构面临转型压力",
-          "长期利好市场健康发展"
-        ],
-        "url": "https://news.example.com/csrc-quant-regulation"
+        "opinions": ["有利于市场公平", "量化机构面临转型压力", "长期利好市场健康发展"],
+        "url": "https://www.csrc.gov.cn"
       }
     },
     {
@@ -54,7 +46,7 @@
       "category": "politics",
       "detail": {
         "summary": "国务院常务会议召开，部署更大力度稳经济政策措施，包括减税降费、扩大内需、稳定就业等多项举措。",
-        "url": "https://news.example.com/state-council-meeting"
+        "url": "https://www.gov.cn"
       }
     },
     {
@@ -65,39 +57,8 @@
       "category": "global",
       "detail": {
         "summary": "中美两国外长在北京举行会谈，就双边关系、经贸合作、气候变化等议题深入交换意见，达成多项共识。",
-        "opinions": [
-          "关系缓和利好全球经济",
-          "期待更多实质性合作",
-          "谨慎乐观看待后续发展"
-        ],
-        "url": "https://news.example.com/china-us-talks"
-      }
-    },
-    {
-      "title": "某知名演员官宣结婚",
-      "source": "微博热榜",
-      "rank": 5,
-      "hot_value": "856万",
-      "category": "entertainment",
-      "detail": {
-        "summary": "某知名演员在个人社交平台官宣结婚喜讯，配文"余生请多指教"，引发网友热烈祝福。",
-        "opinions": [
-          "恭喜！终于等到这一天",
-          "郎才女貌，太般配了",
-          "希望永远幸福"
-        ],
-        "url": "https://entertainment.example.com/actor-marriage"
-      }
-    },
-    {
-      "title": "热门综艺收视率破纪录",
-      "source": "头条热榜",
-      "rank": 6,
-      "hot_value": "645万",
-      "category": "entertainment",
-      "detail": {
-        "summary": "某热门综艺节目最新一期收视率突破3%，创年度综艺收视新高，相关话题霸榜热搜。",
-        "url": "https://entertainment.example.com/variety-ratings"
+        "opinions": ["关系缓和利好全球经济", "期待更多实质性合作"],
+        "url": "https://www.fmprc.gov.cn"
       }
     },
     {
@@ -108,12 +69,31 @@
       "category": "finance",
       "detail": {
         "summary": "美联储主席在国会听证会上释放降息信号，暗示可能在年中开始降息，全球市场应声上涨。",
-        "opinions": [
-          "全球流动性宽松周期开启",
-          "人民币汇率压力减轻",
-          "利好新兴市场"
-        ],
-        "url": "https://news.example.com/fed-rate-signal"
+        "opinions": ["全球流动性宽松周期开启", "人民币汇率压力减轻"],
+        "url": "https://www.federalreserve.gov"
+      }
+    },
+    {
+      "title": "某知名演员官宣结婚",
+      "source": "微博热榜",
+      "rank": 5,
+      "hot_value": "856万",
+      "category": "entertainment",
+      "detail": {
+        "summary": "某知名演员在个人社交平台官宣结婚喜讯，引发网友热烈祝福。",
+        "opinions": ["恭喜恭喜！", "太般配了", "永远幸福"],
+        "url": "https://weibo.com"
+      }
+    },
+    {
+      "title": "热门综艺收视率破纪录",
+      "source": "头条热榜",
+      "rank": 6,
+      "hot_value": "645万",
+      "category": "entertainment",
+      "detail": {
+        "summary": "某热门综艺节目最新一期收视率突破3%，创年度综艺收视新高，相关话题霸榜热搜。",
+        "url": "https://www.iqiyi.com"
       }
     }
   ]
