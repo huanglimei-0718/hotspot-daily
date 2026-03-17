@@ -75,9 +75,18 @@
     let allHotspots = [];
     let currentCategory = 'all';
 
+    // 获取北京时区的日期字符串
+    function getBeijingDate() {
+      const now = new Date();
+      const beijingOffset = 8 * 60; // UTC+8
+      const beijingTime = new Date(now.getTime() + (beijingOffset + now.getTimezoneOffset()) * 60000);
+      return beijingTime.toISOString().split('T')[0];
+    }
+
     // 加载热点数据
     async function loadHotspots() {
-      const today = new Date().toISOString().split('T')[0];
+      const today = getBeijingDate();
+      console.log('尝试加载日期:', today);
       
       try {
         const response = await fetch(`data/hotspots-${today}.json`);
