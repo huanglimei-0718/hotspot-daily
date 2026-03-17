@@ -208,27 +208,82 @@
         const filtered = currentFilter === 'all' ? items : items.filter(i => i.category === currentFilter);
         filtered.forEach((item, idx) => renderCard(container, item, idx + 1));
       } else {
+        // 先渲染大盘指数（如果是股市视图）
+        if (allData.market_index && allData.market_index.indices) {
+          renderMarketIndex(container);
+        }
+        
         const cats = allData.categories || {};
-        const order = ['stock', 'finance', 'politics', 'global', 'sports', 'entertainment'];
+        const order = ['stock', 'tech', 'finance', 'politics', 'global', 'sports', 'entertainment'];
         const names = {
-          stock: '📈 股市', finance: '💰 财经', politics: '🏛️ 时政',
+          stock: '📈 股市', tech: '🤖 科技', finance: '💰 财经', politics: '🏛️ 时政',
           global: '🌍 全球', sports: '🏀 体育', entertainment: '🎬 娱乐'
         };
+        const descriptions = {
+          stock: '重点关注：稀土、商业航天、半导体、芯片、银行',
+          tech: '重点关注：大模型、AI、机器人、智慧农业'
+        };
+        
         order.forEach(cat => {
-          if (cats[cat] && cats[cat].length > 0) {
-            const title = document.createElement('div');
-            title.className = 'section-title';
-            title.textContent = names[cat] || cat;
-            container.appendChild(title);
-            
-            cats[cat].forEach((item, idx) => renderCard(container, item, idx + 1, true));
+          const catData = cats[cat];
+          if (!catData) return;
+          
+          const items = Array.isArray(catData) ? catData : (catData.items || []);
+          if (items.length === 0) return;
+          
+          const title = document.createElement('div');
+          title.className = 'section-title';
+          title.textContent = names[cat] || cat;
+          container.appendChild(title);
+          
+          if (descriptions[cat]) {
+            const desc = document.createElement('p');
+            desc.className = 'text-xs text-gray-500 mb-2 px-2';
+            desc.textContent = descriptions[cat];
+            container.appendChild(desc);
           }
+          
+          items.forEach((item, idx) => renderCard(container, item, idx + 1, true));
         });
       }
 
       if (container.children.length === 0) {
         container.innerHTML = `<div class="text-center py-12 text-gray-500"><p>暂无数据</p></div>`;
       }
+    }
+
+    function renderMarketIndex(container) {
+      const indexData = allData.market_index;
+      if (!indexData || !indexData.indices) return;
+      
+      const card = document.createElement('div');
+      card.className = 'bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-4 mb-6 border border-blue-100';
+      
+      const header = document.createElement('div');
+      header.className = 'flex items-center justify-between mb-3';
+      header.innerHTML = `
+        <h3 class="font-bold text-gray-900">📊 A股市场概览</h3>
+        <span class="text-xs text-gray-500">更新时间：${indexData.update_time || ''}</span>
+      `;
+      card.appendChild(header);
+      
+      const grid = document.createElement('div');
+      grid.className = 'grid grid-cols-2 md:grid-cols-4 gap-3';
+      
+      indexData.indices.forEach(idx => {
+        const isUp = idx.trend === 'up';
+        const cell = document.createElement('div');
+        cell.className = 'bg-white rounded-lg p-3 text-center';
+        cell.innerHTML = `
+          <div class="text-xs text-gray-500 mb-1">${idx.name}</div>
+          <div class="text-lg font-bold ${isUp ? 'text-red-600' : 'text-green-600'}">${idx.value}</div>
+          <div class="text-sm ${isUp ? 'text-red-500' : 'text-green-500'}">${isUp ? '↑' : '↓'}${idx.change}</div>
+        `;
+        grid.appendChild(cell);
+      });
+      
+      card.appendChild(grid);
+      container.appendChild(card);
     }
 
     function renderCard(container, item, rank, noDetail = false) {

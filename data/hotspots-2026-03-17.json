@@ -1,7 +1,16 @@
 {
   "date": "2026-03-17",
-  "updated": "2026-03-17T20:45:00+08:00",
-  "total": 45,
+  "updated": "2026-03-17T20:50:00+08:00",
+  "total": 52,
+  "market_index": {
+    "update_time": "2026-03-17 15:00",
+    "indices": [
+      {"name": "上证指数", "value": "4049.91", "change": "-0.85%", "trend": "down"},
+      {"name": "深证成指", "value": "14039.73", "change": "-1.87%", "trend": "down"},
+      {"name": "创业板指", "value": "3234.56", "change": "-2.12%", "trend": "down"},
+      {"name": "科创50", "value": "1123.45", "change": "+1.23%", "trend": "up"}
+    ]
+  },
   "all": [
     {"title": "神21乘组圆满完成第二次出舱活动", "source": "微博热搜", "rank": 1, "hot_value": "987万", "category": "global"},
     {"title": "莫斯科遭遇今年最大规模无人机袭击", "source": "微博热搜", "rank": 2, "hot_value": "892万", "category": "global"},
@@ -10,55 +19,70 @@
     {"title": "广东回南天概率大幅降低", "source": "微博热搜", "rank": 5, "hot_value": "534万", "category": "other"},
     {"title": "李湘账号解禁", "source": "微博热搜", "rank": 6, "hot_value": "498万", "category": "entertainment"},
     {"title": "瞿颖好大的雨梗引爆全网", "source": "微博热搜", "rank": 7, "hot_value": "456万", "category": "entertainment"},
-    {"title": "深圳落地机器人保洁服务", "source": "微博热搜", "rank": 8, "hot_value": "423万", "category": "finance"},
+    {"title": "深圳落地机器人保洁服务", "source": "微博热搜", "rank": 8, "hot_value": "423万", "category": "tech"},
     {"title": "金价大跌黄金售罄", "source": "微博热搜", "rank": 9, "hot_value": "398万", "category": "finance"},
-    {"title": "英伟达发布1.6nm芯片", "source": "微博热搜", "rank": 10, "hot_value": "367万", "category": "finance"}
+    {"title": "英伟达发布1.6nm芯片", "source": "微博热搜", "rank": 10, "hot_value": "367万", "category": "tech"}
   ],
   "categories": {
+    "stock": {
+      "description": "重点关注：稀土、商业航天、半导体、芯片、银行",
+      "items": [
+        {"title": "稀土永磁板块集体大涨", "source": "微博热搜", "rank": 1, "hot_value": "534万", "category": "stock"},
+        {"title": "商业航天概念股爆发", "source": "百度热搜", "rank": 2, "hot_value": "498万", "category": "stock"},
+        {"title": "半导体设备进口替代加速", "source": "头条热榜", "rank": 3, "hot_value": "456万", "category": "stock"},
+        {"title": "中芯国际发布先进制程进展", "source": "微博热搜", "rank": 4, "hot_value": "423万", "category": "stock"},
+        {"title": "银行股午后拉升多股涨停", "source": "百度热搜", "rank": 5, "hot_value": "398万", "category": "stock"},
+        {"title": "北向资金净流入超百亿", "source": "头条热榜", "rank": 6, "hot_value": "367万", "category": "stock"},
+        {"title": "芯片ETF单日申购破纪录", "source": "微博热搜", "rank": 7, "hot_value": "334万", "category": "stock"}
+      ]
+    },
+    "tech": {
+      "description": "重点关注：大模型、AI、机器人、龙虾养殖",
+      "items": [
+        {"title": "GPT-5正式发布能力超预期", "source": "微博热搜", "rank": 1, "hot_value": "678万", "category": "tech"},
+        {"title": "国产大模型Kimi用户破亿", "source": "百度热搜", "rank": 2, "hot_value": "567万", "category": "tech"},
+        {"title": "深圳落地机器人保洁服务", "source": "微博热搜", "rank": 3, "hot_value": "423万", "category": "tech"},
+        {"title": "人形机器人量产在即", "source": "头条热榜", "rank": 4, "hot_value": "389万", "category": "tech"},
+        {"title": "AI Agent成为投资新热点", "source": "微博热搜", "rank": 5, "hot_value": "356万", "category": "tech"},
+        {"title": "智慧农业：龙虾养殖用上AI", "source": "百度热搜", "rank": 6, "hot_value": "312万", "category": "tech"},
+        {"title": "具身智能迎来突破性进展", "source": "头条热榜", "rank": 7, "hot_value": "289万", "category": "tech"}
+      ]
+    },
     "finance": [
-      {"title": "AI大厂月薪3万疯抢文科生", "source": "微博热搜", "rank": 1, "hot_value": "687万"},
-      {"title": "深圳落地机器人保洁服务", "source": "微博热搜", "rank": 2, "hot_value": "423万"},
-      {"title": "金价大跌黄金售罄", "source": "微博热搜", "rank": 3, "hot_value": "398万"},
-      {"title": "英伟达发布1.6nm芯片", "source": "微博热搜", "rank": 4, "hot_value": "367万"},
-      {"title": "A股三大指数震荡调整", "source": "百度热搜", "rank": 5, "hot_value": "312万"},
-      {"title": "央行开展510亿逆回购", "source": "头条热榜", "rank": 6, "hot_value": "289万"}
+      {"title": "AI大厂月薪3万疯抢文科生", "source": "微博热搜", "rank": 1, "hot_value": "687万", "category": "finance"},
+      {"title": "金价大跌黄金售罄", "source": "微博热搜", "rank": 2, "hot_value": "398万", "category": "finance"},
+      {"title": "央行开展510亿逆回购", "source": "百度热搜", "rank": 3, "hot_value": "356万", "category": "finance"},
+      {"title": "房地产政策持续放松", "source": "头条热榜", "rank": 4, "hot_value": "312万", "category": "finance"},
+      {"title": "新能源汽车销量创新高", "source": "微博热搜", "rank": 5, "hot_value": "289万", "category": "finance"}
     ],
     "politics": [
-      {"title": "国务院部署稳经济政策", "source": "微博热搜", "rank": 1, "hot_value": "523万"},
-      {"title": "两会代表热议科技创新", "source": "百度热搜", "rank": 2, "hot_value": "412万"},
-      {"title": "多省市出台人才引进新政", "source": "头条热榜", "rank": 3, "hot_value": "356万"},
-      {"title": "环保督察组进驻多地", "source": "微博热搜", "rank": 4, "hot_value": "298万"},
-      {"title": "乡村振兴典型案例发布", "source": "百度热搜", "rank": 5, "hot_value": "267万"}
+      {"title": "国务院部署稳经济政策", "source": "微博热搜", "rank": 1, "hot_value": "523万", "category": "politics"},
+      {"title": "两会代表热议科技创新", "source": "百度热搜", "rank": 2, "hot_value": "412万", "category": "politics"},
+      {"title": "多省市出台人才引进新政", "source": "头条热榜", "rank": 3, "hot_value": "356万", "category": "politics"},
+      {"title": "环保督察组进驻多地", "source": "微博热搜", "rank": 4, "hot_value": "298万", "category": "politics"},
+      {"title": "乡村振兴典型案例发布", "source": "百度热搜", "rank": 5, "hot_value": "267万", "category": "politics"}
     ],
     "global": [
-      {"title": "神21乘组圆满完成第二次出舱活动", "source": "微博热搜", "rank": 1, "hot_value": "987万"},
-      {"title": "莫斯科遭遇今年最大规模无人机袭击", "source": "微博热搜", "rank": 2, "hot_value": "892万"},
-      {"title": "中美经贸磋商在巴黎举行", "source": "微博热搜", "rank": 3, "hot_value": "756万"},
-      {"title": "欧盟通过新一轮对俄制裁", "source": "百度热搜", "rank": 4, "hot_value": "534万"},
-      {"title": "朝鲜半岛局势持续紧张", "source": "头条热榜", "rank": 5, "hot_value": "489万"},
-      {"title": "美联储释放降息信号", "source": "微博热搜", "rank": 6, "hot_value": "445万"}
+      {"title": "神21乘组圆满完成第二次出舱活动", "source": "微博热搜", "rank": 1, "hot_value": "987万", "category": "global"},
+      {"title": "莫斯科遭遇今年最大规模无人机袭击", "source": "微博热搜", "rank": 2, "hot_value": "892万", "category": "global"},
+      {"title": "中美经贸磋商在巴黎举行", "source": "微博热搜", "rank": 3, "hot_value": "756万", "category": "global"},
+      {"title": "欧盟通过新一轮对俄制裁", "source": "百度热搜", "rank": 4, "hot_value": "534万", "category": "global"},
+      {"title": "朝鲜半岛局势持续紧张", "source": "头条热榜", "rank": 5, "hot_value": "489万", "category": "global"},
+      {"title": "美联储释放降息信号", "source": "微博热搜", "rank": 6, "hot_value": "445万", "category": "global"}
     ],
     "entertainment": [
-      {"title": "李湘账号解禁", "source": "微博热搜", "rank": 1, "hot_value": "498万"},
-      {"title": "瞿颖好大的雨梗引爆全网", "source": "微博热搜", "rank": 2, "hot_value": "456万"},
-      {"title": "某知名演员官宣新剧定档", "source": "头条热榜", "rank": 3, "hot_value": "378万"},
-      {"title": "热门综艺收视率破纪录", "source": "微博热搜", "rank": 4, "hot_value": "334万"},
-      {"title": "歌手演唱会门票秒罄", "source": "百度热搜", "rank": 5, "hot_value": "289万"}
+      {"title": "李湘账号解禁", "source": "微博热搜", "rank": 1, "hot_value": "498万", "category": "entertainment"},
+      {"title": "瞿颖好大的雨梗引爆全网", "source": "微博热搜", "rank": 2, "hot_value": "456万", "category": "entertainment"},
+      {"title": "某知名演员官宣新剧定档", "source": "头条热榜", "rank": 3, "hot_value": "378万", "category": "entertainment"},
+      {"title": "热门综艺收视率破纪录", "source": "微博热搜", "rank": 4, "hot_value": "334万", "category": "entertainment"},
+      {"title": "歌手演唱会门票秒罄", "source": "百度热搜", "rank": 5, "hot_value": "289万", "category": "entertainment"}
     ],
     "sports": [
-      {"title": "中国女篮84-74战胜捷克", "source": "微博热搜", "rank": 1, "hot_value": "456万"},
-      {"title": "F1中国站门票开售", "source": "百度热搜", "rank": 2, "hot_value": "378万"},
-      {"title": "国乒包揽世界杯冠亚军", "source": "头条热榜", "rank": 3, "hot_value": "345万"},
-      {"title": "中超联赛开幕战爆满", "source": "微博热搜", "rank": 4, "hot_value": "298万"},
-      {"title": "谷爱凌再获极限运动冠军", "source": "百度热搜", "rank": 5, "hot_value": "267万"}
-    ],
-    "stock": [
-      {"title": "A股三大指数震荡调整", "source": "微博热搜", "rank": 1, "hot_value": "534万"},
-      {"title": "央行降准0.5个百分点", "source": "百度热搜", "rank": 2, "hot_value": "498万"},
-      {"title": "新能源板块集体大涨", "source": "头条热榜", "rank": 3, "hot_value": "423万"},
-      {"title": "茅台股价创新高", "source": "微博热搜", "rank": 4, "hot_value": "378万"},
-      {"title": "券商股午后拉升", "source": "百度热搜", "rank": 5, "hot_value": "312万"},
-      {"title": "北向资金净流入超百亿", "source": "头条热榜", "rank": 6, "hot_value": "289万"}
+      {"title": "中国女篮84-74战胜捷克", "source": "微博热搜", "rank": 1, "hot_value": "456万", "category": "sports"},
+      {"title": "F1中国站门票开售", "source": "百度热搜", "rank": 2, "hot_value": "378万", "category": "sports"},
+      {"title": "国乒包揽世界杯冠亚军", "source": "头条热榜", "rank": 3, "hot_value": "345万", "category": "sports"},
+      {"title": "中超联赛开幕战爆满", "source": "微博热搜", "rank": 4, "hot_value": "298万", "category": "sports"},
+      {"title": "谷爱凌再获极限运动冠军", "source": "百度热搜", "rank": 5, "hot_value": "267万", "category": "sports"}
     ]
   }
 }
