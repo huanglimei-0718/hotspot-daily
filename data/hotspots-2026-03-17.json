@@ -1,125 +1,126 @@
 {
   "date": "2026-03-17",
-  "updated": "2026-03-17T18:55:00+08:00",
+  "updated": "2026-03-17T20:35:00+08:00",
   "total": 10,
   "items": [
     {
-      "title": "央行年内首次降准正式实施",
-      "source": "微博热榜",
+      "title": "神21乘组圆满完成第二次出舱活动",
+      "source": "微博热搜",
       "rank": 1,
       "hot_value": "987万",
-      "category": "finance",
+      "category": "global",
       "detail": {
-        "summary": "央行下调金融机构存款准备金率0.5个百分点，释放约1万亿元长期资金，支持信贷投放、提振市场信心。",
-        "opinions": ["利好股市流动性", "降低企业融资成本", "房地产市场或受提振"],
-        "url": "https://www.pbc.gov.cn"
+        "summary": "中国航天员张陆、武飞完成第二次出舱活动，标志着中国空间站建设取得重要进展，为后续长期驻留和科学实验奠定基础。",
+        "opinions": ["中国航天再进一步", "太空家园越建越稳", "为国家骄傲"],
+        "url": "https://news.cctv.com/2026/03/17/ARTIshenzhou21_eva.shtml"
       }
     },
     {
-      "title": "A股三大指数震荡调整 沪指跌0.85%",
-      "source": "百度热搜",
+      "title": "莫斯科遭遇今年最大规模无人机袭击",
+      "source": "今日头条",
       "rank": 2,
-      "hot_value": "856万",
-      "category": "finance",
-      "detail": {
-        "summary": "上证指数收盘4049.91点，跌幅0.85%，全天震荡调整。央行开展510亿元逆回购操作释放流动性。",
-        "opinions": ["短期或延续宽幅震荡", "政策提供底线支撑"],
-        "url": "https://finance.sina.com.cn/stock/"
-      }
-    },
-    {
-      "title": "2026央视3·15晚会曝光增高骗局",
-      "source": "微博热榜",
-      "rank": 3,
       "hot_value": "892万",
-      "category": "other",
+      "category": "global",
       "detail": {
-        "summary": "央视3·15晚会曝光德脊瑞物理增高服务为骗局，无医疗资质却宣称3个月增高5-8厘米。",
-        "opinions": ["消费者需警惕虚假宣传", "监管部门应加强整治"],
-        "url": "https://cctv.cctv.com/2026/0315/"
+        "summary": "3月14-16日连续三昼夜遭打击，俄军击落181架无人机，俄乌冲突本土对抗强度刷新，可能影响全球能源供应。",
+        "opinions": ["战争打到本土深处", "油价又要涨了", "局势升级"],
+        "url": "https://www.thepaper.cn/newsDetail_forward_26789012"
       }
     },
     {
-      "title": "美联储降息预期推迟 美债利率波动",
-      "source": "头条热榜",
-      "rank": 1,
+      "title": "中美经贸磋商在巴黎举行",
+      "source": "微博热搜",
+      "rank": 3,
       "hot_value": "756万",
       "category": "global",
       "detail": {
-        "summary": "美联储降息预期推迟，美债利率波动对高估值成长股形成压制。",
-        "opinions": ["全球流动性宽松周期或延后", "人民币汇率压力缓解"],
-        "url": "https://www.federalreserve.gov"
+        "summary": "中美双方就经贸问题深入沟通，释放管控分歧积极信号，意味着进出口商品、跨境电商等可能迎来更稳定环境。",
+        "opinions": ["关系缓和信号", "愿意坐下来谈", "利好外贸"],
+        "url": "https://www.mofcom.gov.cn/article/news/2026-03/20260317001.shtml"
       }
     },
     {
-      "title": "国务院部署稳经济一揽子政策",
-      "source": "微博热榜",
+      "title": "AI大厂月薪3万疯抢文科生",
+      "source": "微博热搜",
       "rank": 4,
-      "hot_value": "723万",
-      "category": "politics",
-      "detail": {
-        "summary": "国务院常务会议部署更大力度稳经济政策措施，包括减税降费、扩大内需、稳定就业等。",
-        "url": "https://www.gov.cn"
-      }
-    },
-    {
-      "title": "汇金公司发挥平准基金作用稳定市场",
-      "source": "百度热搜",
-      "rank": 5,
-      "hot_value": "654万",
-      "category": "finance",
-      "detail": {
-        "summary": "汇金公司持续发挥平准基金作用，为市场提供底线支撑，稳定投资者信心。",
-        "opinions": ["有利于市场稳定", "长期资金入市信号"],
-        "url": "https://www.huijin-inv.cn"
-      }
-    },
-    {
-      "title": "中美经贸高层会谈举行",
-      "source": "头条热榜",
-      "rank": 3,
       "hot_value": "687万",
-      "category": "global",
-      "detail": {
-        "summary": "中美经贸高层在北京举行会谈，就双边贸易、经济合作等议题交换意见。",
-        "opinions": ["关系缓和利好全球经济", "期待实质性进展"],
-        "url": "https://www.mofcom.gov.cn"
-      }
-    },
-    {
-      "title": "多地出台房地产新政",
-      "source": "微博热榜",
-      "rank": 6,
-      "hot_value": "598万",
       "category": "finance",
       "detail": {
-        "summary": "多个城市出台房地产新政，优化限购政策、降低首付比例，促进房地产市场平稳发展。",
-        "opinions": ["政策持续放松", "购房者信心有望恢复"],
-        "url": "https://www.jiemian.com"
+        "summary": "就业市场新趋势，AI公司高薪招聘文科生，打破\"文科就业难\"刻板印象，文理融合成为未来人才需求方向。",
+        "opinions": ["文科生春天来了", "文理融合是未来", "选专业新思路"],
+        "url": "https://finance.sina.com.cn/jjxw/2026-03-17/doc-ineimkqw3456789.shtml"
       }
     },
     {
-      "title": "新能源汽车销量创新高",
-      "source": "百度热搜",
-      "rank": 7,
+      "title": "广东等地回南天概率大幅降低",
+      "source": "今日头条",
+      "rank": 5,
       "hot_value": "534万",
-      "category": "finance",
+      "category": "other",
       "detail": {
-        "summary": "新能源汽车销量持续增长，多家车企公布亮眼销售数据，行业景气度提升。",
-        "opinions": ["渗透率持续提升", "产业链受益"],
-        "url": "https://auto.sina.com.cn"
+        "summary": "未来一周气温平稳，潮湿天气缓解，广东等地回南天概率大幅降低，民众生活出行更加便利。",
+        "opinions": ["终于不用返潮了", "天气给力", "出行方便了"],
+        "url": "https://weather.news.qq.com/a/20260317/001234.htm"
       }
     },
     {
-      "title": "某知名演员官宣新剧定档",
-      "source": "微博热榜",
-      "rank": 8,
-      "hot_value": "812万",
+      "title": "李湘账号解禁，多平台恢复关注功能",
+      "source": "今日头条",
+      "rank": 6,
+      "hot_value": "498万",
       "category": "entertainment",
       "detail": {
-        "summary": "某知名演员新剧正式官宣定档，引发粉丝热烈期待。",
-        "opinions": ["期待播出", "演员演技在线"],
-        "url": "https://weibo.com"
+        "summary": "李湘微博、抖音、小红书恢复关注功能，但微博内容已清空，引发网友猜测和讨论。",
+        "opinions": ["终于解封了", "内容怎么没了", "期待回归"],
+        "url": "https://ent.ifeng.com/c/8abcDEF123456"
+      }
+    },
+    {
+      "title": "瞿颖\"好大的雨\"梗引爆全网",
+      "source": "今日头条",
+      "rank": 7,
+      "hot_value": "456万",
+      "category": "entertainment",
+      "detail": {
+        "summary": "瞿颖魔性台词\"好大的雨\"衍生表情包，全平台播放量破18亿，成为最新网络热梗。",
+        "opinions": ["太魔性了", "笑死我了", "全是表情包"],
+        "url": "https://ent.sina.com.cn/s/m/2026-03-17/doc-imeipzr9876543.shtml"
+      }
+    },
+    {
+      "title": "深圳落地机器人上门保洁服务",
+      "source": "微博热搜",
+      "rank": 8,
+      "hot_value": "423万",
+      "category": "finance",
+      "detail": {
+        "summary": "深圳率先落地机器人上门保洁服务，科技与生活结合，标志着智能家居服务进入实用化阶段。",
+        "opinions": ["科技感满满", "以后不用自己打扫了", "多少钱一次？"],
+        "url": "https://tech.163.com/26/0317/12/I5K6L7M800098ABC.html"
+      }
+    },
+    {
+      "title": "金价大跌黄金售罄",
+      "source": "微博热搜",
+      "rank": 9,
+      "hot_value": "398万",
+      "category": "finance",
+      "detail": {
+        "summary": "金价大幅下跌引发抢购潮，某品牌黄金饰品9点开卖1分钟售罄，消费者趁低买入意愿强烈。",
+        "opinions": ["赶紧抄底", "手慢无", "投资好时机"],
+        "url": "https://finance.people.com.cn/n1/2026/0317/c1004-40123456.html"
+      }
+    },
+    {
+      "title": "英伟达发布1.6nm Feynman芯片",
+      "source": "科技媒体",
+      "rank": 10,
+      "hot_value": "367万",
+      "category": "finance",
+      "detail": {
+        "summary": "GTC 2026大会发布1.6nm Feynman芯片，性能提升300%，将重塑AI算力格局，直接影响所有AI产品性能。",
+        "opinions": ["性能怪兽", "AI产品要起飞了", "科技巨头军备竞赛"],
+        "url": "https://www.ithome.com/0/789/012.htm"
       }
     }
   ]
