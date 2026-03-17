@@ -12,10 +12,21 @@
     .category-politics { border-left-color: #ef4444; }
     .category-global { border-left-color: #10b981; }
     .category-other { border-left-color: #6b7280; }
+    .category-entertainment { border-left-color: #ec4899; }
     .loading { animation: pulse 2s infinite; }
     @keyframes pulse {
       0%, 100% { opacity: 1; }
       50% { opacity: 0.5; }
+    }
+    .hotspot-item { cursor: pointer; }
+    .hotspot-item:hover { background-color: #f9fafb; }
+    .detail-panel {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+    }
+    .detail-panel.expanded {
+      max-height: 1000px;
     }
   </style>
 </head>
@@ -41,6 +52,9 @@
       <button onclick="filterCategory('global')" class="tab-btn px-4 py-2 rounded-lg bg-gray-200 text-gray-700 font-medium hover:bg-gray-300" data-category="global">
         🌍 全球局势
       </button>
+      <button onclick="filterCategory('entertainment')" class="tab-btn px-4 py-2 rounded-lg bg-gray-200 text-gray-700 font-medium hover:bg-gray-300" data-category="entertainment">
+        🎬 娱乐八卦
+      </button>
     </div>
 
     <!-- Content -->
@@ -53,7 +67,7 @@
     <!-- Footer -->
     <footer class="mt-12 pt-6 border-t border-gray-200 text-center text-gray-400 text-sm">
       <p>数据来源：微博、百度、头条热榜 | 仅供个人参考</p>
-      <p class="mt-1">由 🦞 槑头脑特工4号 自动生成</p>
+      <p class="mt-1">由 🦞 槑头脑特工4号 自动生成 | 点击热点查看详情</p>
     </footer>
   </div>
 
@@ -117,22 +131,52 @@
             <h2 class="text-lg font-semibold text-gray-900">${source}</h2>
             <span class="text-sm text-gray-400">${groupItems.length} 条</span>
           </div>
-          <ul class="divide-y divide-gray-50">
-            ${groupItems.map(item => `
-              <li class="px-6 py-3 hover:bg-gray-50 transition-colors border-l-4 category-${item.category}">
-                <div class="flex items-start justify-between">
-                  <div class="flex-1">
-                    <span class="inline-block w-6 h-6 text-center text-sm font-bold text-gray-400 mr-2">
-                      ${item.rank}
-                    </span>
-                    <span class="text-gray-800">${escapeHtml(item.title)}</span>
+          <ul class="divide-y divide-gray-50" id="list-${source.replace(/\s/g, '-')}">
+            ${groupItems.map((item, index) => `
+              <li class="border-l-4 category-${item.category}">
+                <div class="hotspot-item px-6 py-3 transition-colors" onclick="toggleDetail('${source.replace(/\s/g, '-')}-${index}')">
+                  <div class="flex items-start justify-between">
+                    <div class="flex-1 flex items-center">
+                      <span class="inline-block w-6 h-6 text-center text-sm font-bold text-gray-400 mr-2">
+                        ${item.rank}
+                      </span>
+                      <span class="text-gray-800 flex-1">${escapeHtml(item.title)}</span>
+                      <span class="text-gray-400 ml-2 text-xs">
+                        ${item.detail ? '▼' : ''}
+                      </span>
+                    </div>
+                    ${item.hot_value ? `
+                      <span class="text-xs text-gray-400 ml-2 whitespace-nowrap">
+                        🔥 ${item.hot_value}
+                      </span>
+                    ` : ''}
                   </div>
-                  ${item.hot_value ? `
-                    <span class="text-xs text-gray-400 ml-2 whitespace-nowrap">
-                      🔥 ${item.hot_value}
-                    </span>
-                  ` : ''}
                 </div>
+                ${item.detail ? `
+                  <div class="detail-panel bg-gray-50 px-6 py-4 border-t border-gray-100" id="detail-${source.replace(/\s/g, '-')}-${index}">
+                    ${item.detail.summary ? `
+                      <div class="mb-3">
+                        <h4 class="text-sm font-semibold text-gray-700 mb-1">📰 热点摘要</h4>
+                        <p class="text-sm text-gray-600 leading-relaxed">${escapeHtml(item.detail.summary)}</p>
+                      </div>
+                    ` : ''}
+                    ${item.detail.opinions && item.detail.opinions.length > 0 ? `
+                      <div class="mb-3">
+                        <h4 class="text-sm font-semibold text-gray-700 mb-1">💬 网络观点</h4>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                          ${item.detail.opinions.map(op => `<li>• ${escapeHtml(op)}</li>`).join('')}
+                        </ul>
+                      </div>
+                    ` : ''}
+                    ${item.detail.url ? `
+                      <div class="mt-3">
+                        <a href="${item.detail.url}" target="_blank" class="inline-flex items-center text-sm text-blue-600 hover:text-blue-800">
+                          🔗 查看权威报道 →
+                        </a>
+                      </div>
+                    ` : ''}
+                  </div>
+                ` : ''}
               </li>
             `).join('')}
           </ul>
@@ -147,6 +191,14 @@
             <p>该分类暂无热点</p>
           </div>
         `;
+      }
+    }
+
+    // 展开/收起详情
+    function toggleDetail(id) {
+      const panel = document.getElementById(`detail-${id}`);
+      if (panel) {
+        panel.classList.toggle('expanded');
       }
     }
 
