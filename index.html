@@ -89,8 +89,25 @@
       console.log('尝试加载日期:', today);
       
       try {
-        const response = await fetch(`data/hotspots-${today}.json`);
-        if (!response.ok) throw new Error('数据文件不存在');
+        // 尝试多个日期（防止时区问题）
+        let response;
+        const dates = [today];
+        
+        // 如果今天数据不存在，尝试昨天
+        const yesterday = new Date(getBeijingDate());
+        yesterday.setDate(yesterday.getDate() - 1);
+        dates.push(yesterday.toISOString().split('T')[0]);
+        
+        for (const date of dates) {
+          console.log('尝试加载:', `./data/hotspots-${date}.json`);
+          response = await fetch(`./data/hotspots-${date}.json`);
+          if (response.ok) {
+            console.log('成功加载:', date);
+            break;
+          }
+        }
+        
+        if (!response || !response.ok) throw new Error('数据文件不存在');
         
         const data = await response.json();
         allHotspots = data;
