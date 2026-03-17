@@ -1,6 +1,6 @@
 {
   "date": "2026-03-17",
-  "updated": "2026-03-17T20:35:00+08:00",
+  "updated": "2026-03-17T20:40:00+08:00",
   "total": 10,
   "items": [
     {
@@ -10,20 +10,20 @@
       "hot_value": "987万",
       "category": "global",
       "detail": {
-        "summary": "中国航天员张陆、武飞完成第二次出舱活动，标志着中国空间站建设取得重要进展，为后续长期驻留和科学实验奠定基础。",
-        "opinions": ["中国航天再进一步", "太空家园越建越稳", "为国家骄傲"],
+        "summary": "中国航天员张陆、武飞完成第二次出舱活动，标志着中国空间站建设取得重要进展。",
+        "opinions": ["中国航天再进一步", "太空家园越建越稳"],
         "url": "https://news.cctv.com/2026/03/17/ARTIshenzhou21_eva.shtml"
       }
     },
     {
       "title": "莫斯科遭遇今年最大规模无人机袭击",
-      "source": "今日头条",
+      "source": "微博热搜",
       "rank": 2,
       "hot_value": "892万",
       "category": "global",
       "detail": {
-        "summary": "3月14-16日连续三昼夜遭打击，俄军击落181架无人机，俄乌冲突本土对抗强度刷新，可能影响全球能源供应。",
-        "opinions": ["战争打到本土深处", "油价又要涨了", "局势升级"],
+        "summary": "3月14-16日连续三昼夜遭打击，俄军击落181架无人机，俄乌冲突本土对抗强度刷新。",
+        "opinions": ["战争打到本土深处", "油价又要涨了"],
         "url": "https://www.thepaper.cn/newsDetail_forward_26789012"
       }
     },
@@ -34,8 +34,8 @@
       "hot_value": "756万",
       "category": "global",
       "detail": {
-        "summary": "中美双方就经贸问题深入沟通，释放管控分歧积极信号，意味着进出口商品、跨境电商等可能迎来更稳定环境。",
-        "opinions": ["关系缓和信号", "愿意坐下来谈", "利好外贸"],
+        "summary": "中美双方就经贸问题深入沟通，释放管控分歧积极信号。",
+        "opinions": ["关系缓和信号", "愿意坐下来谈"],
         "url": "https://www.mofcom.gov.cn/article/news/2026-03/20260317001.shtml"
       }
     },
@@ -46,44 +46,44 @@
       "hot_value": "687万",
       "category": "finance",
       "detail": {
-        "summary": "就业市场新趋势，AI公司高薪招聘文科生，打破\"文科就业难\"刻板印象，文理融合成为未来人才需求方向。",
-        "opinions": ["文科生春天来了", "文理融合是未来", "选专业新思路"],
+        "summary": "就业市场新趋势，AI公司高薪招聘文科生，打破\"文科就业难\"刻板印象。",
+        "opinions": ["文科生春天来了", "文理融合是未来"],
         "url": "https://finance.sina.com.cn/jjxw/2026-03-17/doc-ineimkqw3456789.shtml"
       }
     },
     {
       "title": "广东等地回南天概率大幅降低",
-      "source": "今日头条",
+      "source": "微博热搜",
       "rank": 5,
       "hot_value": "534万",
       "category": "other",
       "detail": {
-        "summary": "未来一周气温平稳，潮湿天气缓解，广东等地回南天概率大幅降低，民众生活出行更加便利。",
-        "opinions": ["终于不用返潮了", "天气给力", "出行方便了"],
+        "summary": "未来一周气温平稳，潮湿天气缓解，民众生活出行更加便利。",
+        "opinions": ["终于不用返潮了", "天气给力"],
         "url": "https://weather.news.qq.com/a/20260317/001234.htm"
       }
     },
     {
       "title": "李湘账号解禁，多平台恢复关注功能",
-      "source": "今日头条",
+      "source": "微博热搜",
       "rank": 6,
       "hot_value": "498万",
       "category": "entertainment",
       "detail": {
-        "summary": "李湘微博、抖音、小红书恢复关注功能，但微博内容已清空，引发网友猜测和讨论。",
-        "opinions": ["终于解封了", "内容怎么没了", "期待回归"],
+        "summary": "李湘微博、抖音、小红书恢复关注功能，但微博内容已清空。",
+        "opinions": ["终于解封了", "期待回归"],
         "url": "https://ent.ifeng.com/c/8abcDEF123456"
       }
     },
     {
       "title": "瞿颖\"好大的雨\"梗引爆全网",
-      "source": "今日头条",
+      "source": "微博热搜",
       "rank": 7,
       "hot_value": "456万",
       "category": "entertainment",
       "detail": {
-        "summary": "瞿颖魔性台词\"好大的雨\"衍生表情包，全平台播放量破18亿，成为最新网络热梗。",
-        "opinions": ["太魔性了", "笑死我了", "全是表情包"],
+        "summary": "瞿颖魔性台词衍生表情包，全平台播放量破18亿。",
+        "opinions": ["太魔性了", "笑死我了"],
         "url": "https://ent.sina.com.cn/s/m/2026-03-17/doc-imeipzr9876543.shtml"
       }
     },
@@ -94,8 +94,8 @@
       "hot_value": "423万",
       "category": "finance",
       "detail": {
-        "summary": "深圳率先落地机器人上门保洁服务，科技与生活结合，标志着智能家居服务进入实用化阶段。",
-        "opinions": ["科技感满满", "以后不用自己打扫了", "多少钱一次？"],
+        "summary": "深圳率先落地机器人上门保洁服务，科技与生活结合。",
+        "opinions": ["科技感满满", "以后不用自己打扫了"],
         "url": "https://tech.163.com/26/0317/12/I5K6L7M800098ABC.html"
       }
     },
@@ -106,20 +106,20 @@
       "hot_value": "398万",
       "category": "finance",
       "detail": {
-        "summary": "金价大幅下跌引发抢购潮，某品牌黄金饰品9点开卖1分钟售罄，消费者趁低买入意愿强烈。",
-        "opinions": ["赶紧抄底", "手慢无", "投资好时机"],
+        "summary": "金价大幅下跌引发抢购潮，某品牌黄金饰品1分钟售罄。",
+        "opinions": ["赶紧抄底", "手慢无"],
         "url": "https://finance.people.com.cn/n1/2026/0317/c1004-40123456.html"
       }
     },
     {
       "title": "英伟达发布1.6nm Feynman芯片",
-      "source": "科技媒体",
+      "source": "微博热搜",
       "rank": 10,
       "hot_value": "367万",
       "category": "finance",
       "detail": {
-        "summary": "GTC 2026大会发布1.6nm Feynman芯片，性能提升300%，将重塑AI算力格局，直接影响所有AI产品性能。",
-        "opinions": ["性能怪兽", "AI产品要起飞了", "科技巨头军备竞赛"],
+        "summary": "GTC 2026大会发布1.6nm芯片，性能提升300%，重塑AI算力格局。",
+        "opinions": ["性能怪兽", "AI产品要起飞了"],
         "url": "https://www.ithome.com/0/789/012.htm"
       }
     }
