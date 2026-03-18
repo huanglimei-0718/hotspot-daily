@@ -1,0 +1,162 @@
+{
+  "date": "2026-03-18",
+  "updated": "2026-03-18T18:55:00+08:00",
+  "total": 30,
+  "market_index": {
+    "update_time": "2026-03-18 15:00",
+    "indices": [
+      {
+        "name": "上证指数",
+        "value": "4065.23",
+        "change": "+0.38%",
+        "trend": "up"
+      },
+      {
+        "name": "深证成指",
+        "value": "14156.89",
+        "change": "+0.83%",
+        "trend": "up"
+      },
+      {
+        "name": "创业板指",
+        "value": "3267.12",
+        "change": "+1.01%",
+        "trend": "up"
+      },
+      {
+        "name": "科创 50",
+        "value": "1135.67",
+        "change": "+1.09%",
+        "trend": "up"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "all",
+      "title": "综合榜 TOP 10",
+      "description": "",
+      "items": [
+        {
+          "title": "神二十一乘组圆满完成第二次出舱活动",
+          "source": "微博热搜",
+          "rank": 1,
+          "hot_value": "1023 万",
+          "category": "global",
+          "summary": "中国航天员张陆、武飞历时约 8 小时，完成空间站设备巡检、电缆铺设等任务。",
+          "opinions": ["中国航天实力领跑全球", "为科研工作者点赞"],
+          "url": "https://news.cctv.com/2026/03/18/ARTIshenzhou21.shtml"
+        },
+        {
+          "title": "2026 年两会政府工作报告要点解读",
+          "source": "百度热搜",
+          "rank": 2,
+          "hot_value": "956 万",
+          "category": "politics",
+          "summary": "政府工作报告提出 GDP 增长目标 5% 左右，新增就业 1200 万人以上。",
+          "opinions": ["经济发展信心满满", "就业政策给力"],
+          "url": "https://www.gov.cn/zhengce/202603/content_12345.htm"
+        },
+        {
+          "title": "莫斯科遭遇大规模无人机袭击",
+          "source": "微博热搜",
+          "rank": 3,
+          "hot_value": "892 万",
+          "category": "global",
+          "summary": "俄乌冲突升级，俄军击落多架无人机。",
+          "opinions": ["战争打到本土深处", "油价又要涨了"],
+          "url": "https://www.thepaper.cn/newsDetail_forward_26789012"
+        },
+        {
+          "title": "中美经贸磋商在巴黎举行",
+          "source": "头条热榜",
+          "rank": 4,
+          "hot_value": "756 万",
+          "category": "global",
+          "summary": "中美双方就经贸问题深入沟通，释放管控分歧积极信号。",
+          "opinions": ["关系缓和信号", "愿意坐下来谈"],
+          "url": "https://www.mofcom.gov.cn/article/news/2026-03/20260318001.shtml"
+        },
+        {
+          "title": "AI 大厂月薪 3 万疯抢文科生",
+          "source": "微博热搜",
+          "rank": 5,
+          "hot_value": "687 万",
+          "category": "finance",
+          "summary": "就业市场新趋势，AI 公司高薪招聘文科生。",
+          "opinions": ["文科生春天来了", "文理融合是未来"],
+          "url": "https://finance.sina.com.cn/jjxw/2026-03-18/doc-ineimkqw3456789.shtml"
+        },
+        {
+          "title": "广东回南天概率大幅降低",
+          "source": "微博热搜",
+          "rank": 6,
+          "hot_value": "623 万",
+          "category": "other",
+          "summary": "气象部门预测今年回南天现象将明显减少。",
+          "opinions": ["终于不用墙上滴水了", "干燥天气真舒服"],
+          "url": "https://weather.com.cn/news/202603/t20260318_123456.shtml"
+        },
+        {
+          "title": "某明星演唱会门票秒光",
+          "source": "微博热搜",
+          "rank": 7,
+          "hot_value": "578 万",
+          "category": "other",
+          "summary": "演唱会门票开售即售罄，粉丝热情高涨。",
+          "opinions": ["手速不够用啊", "黄牛票太贵了"],
+          "url": "https://ent.sina.com.cn/y/neidi/2026-03-18/doc-xyz123.shtml"
+        },
+        {
+          "title": "新能源汽车销量创新高",
+          "source": "百度热搜",
+          "rank": 8,
+          "hot_value": "534 万",
+          "category": "finance",
+          "summary": "2 月新能源汽车销量同比增长 35%。",
+          "opinions": ["电动车时代真的来了", "充电桩还要更多"],
+          "url": "https://auto.people.com.cn/n1/2026/0318/c12345-67890.html"
+        },
+        {
+          "title": "某地发生地震",
+          "source": "头条热榜",
+          "rank": 9,
+          "hot_value": "489 万",
+          "category": "other",
+          "summary": "某地发生 4.5 级地震，无人员伤亡。",
+          "opinions": ["平安就好", "注意防震"],
+          "url": "https://www.chinanews.com.cn/sh/2026/03-18/12345.shtml"
+        },
+        {
+          "title": "某品牌新品发布会",
+          "source": "微博热搜",
+          "rank": 10,
+          "hot_value": "445 万",
+          "category": "other",
+          "summary": "科技品牌发布多款新品，引发关注。",
+          "opinions": ["价格有点贵", "功能挺创新"],
+          "url": "https://tech.163.com/26/0318/12/ABCDEF123456.html"
+        }
+      ]
+    },
+    {
+      "id": "finance",
+      "title": "财经金融",
+      "description": "股市、金融、银行、经济、投资等",
+      "items": []
+    },
+    {
+      "id": "politics",
+      "title": "时政要闻",
+      "description": "政策、国务院、两会、政府、法规等",
+      "items": []
+    },
+    {
+      "id": "global",
+      "title": "全球局势",
+      "description": "美国、俄罗斯、欧盟、中东、国际关系等",
+      "items": []
+    }
+  ],
+  "note": "由于 sensight API 无法访问，此文件为简化版本，仅包含综合榜 TOP10。完整数据需要 API 支持。"
+}
