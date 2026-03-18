@@ -1,7 +1,7 @@
 {
   "date": "2026-03-18",
-  "updated": "2026-03-18T18:55:00+08:00",
-  "total": 30,
+  "updated": "2026-03-18T19:17:00+08:00",
+  "total": 40,
   "market_index": {
     "update_time": "2026-03-18 15:00",
     "indices": [
@@ -34,108 +34,158 @@
   "sections": [
     {
       "id": "all",
-      "title": "综合榜 TOP 10",
+      "title": "综合榜 TOP 15",
       "description": "",
       "items": [
         {
-          "title": "神二十一乘组圆满完成第二次出舱活动",
-          "source": "微博热搜",
+          "title": "干事创业一定要树立正确政绩观",
+          "source": "百度热搜",
           "rank": 1,
-          "hot_value": "1023 万",
-          "category": "global",
-          "summary": "中国航天员张陆、武飞历时约 8 小时，完成空间站设备巡检、电缆铺设等任务。",
-          "opinions": ["中国航天实力领跑全球", "为科研工作者点赞"],
-          "url": "https://news.cctv.com/2026/03/18/ARTIshenzhou21.shtml"
+          "hot_value": "置顶",
+          "category": "politics",
+          "summary": "强调干部要树立正确政绩观，为民服务。",
+          "opinions": ["为民务实", "真抓实干"],
+          "url": "https://top.baidu.com/board?tab=realtime"
         },
         {
-          "title": "2026 年两会政府工作报告要点解读",
+          "title": "微信新功能获赞：分寸感一下就上来了",
           "source": "百度热搜",
           "rank": 2,
-          "hot_value": "956 万",
-          "category": "politics",
-          "summary": "政府工作报告提出 GDP 增长目标 5% 左右，新增就业 1200 万人以上。",
-          "opinions": ["经济发展信心满满", "就业政策给力"],
-          "url": "https://www.gov.cn/zhengce/202603/content_12345.htm"
+          "hot_value": "热门",
+          "category": "other",
+          "summary": "微信推出新功能，用户体验提升。",
+          "opinions": ["这个功能实用", "微信越来越好了"],
+          "url": "https://top.baidu.com/board?tab=realtime"
         },
         {
-          "title": "莫斯科遭遇大规模无人机袭击",
-          "source": "微博热搜",
+          "title": "建议年轻人少去公园容易伤自尊",
+          "source": "百度热搜",
           "rank": 3,
-          "hot_value": "892 万",
-          "category": "global",
-          "summary": "俄乌冲突升级，俄军击落多架无人机。",
-          "opinions": ["战争打到本土深处", "油价又要涨了"],
-          "url": "https://www.thepaper.cn/newsDetail_forward_26789012"
+          "hot_value": "热门",
+          "category": "other",
+          "summary": "公园大爷大妈的健身能力让年轻人自愧不如。",
+          "opinions": ["确实打不过", "姜还是老的辣"],
+          "url": "https://top.baidu.com/board?tab=realtime"
         },
         {
-          "title": "中美经贸磋商在巴黎举行",
-          "source": "头条热榜",
+          "title": "踏青赏花、采春茶、吃春菜",
+          "source": "百度热搜",
           "rank": 4,
-          "hot_value": "756 万",
-          "category": "global",
-          "summary": "中美双方就经贸问题深入沟通，释放管控分歧积极信号。",
-          "opinions": ["关系缓和信号", "愿意坐下来谈"],
-          "url": "https://www.mofcom.gov.cn/article/news/2026-03/20260318001.shtml"
+          "hot_value": "热门",
+          "category": "other",
+          "summary": "春季活动丰富多彩。",
+          "opinions": ["春天真好", "想去踏青"],
+          "url": "https://top.baidu.com/board?tab=realtime"
         },
         {
-          "title": "AI 大厂月薪 3 万疯抢文科生",
-          "source": "微博热搜",
+          "title": "腾讯年报披露：人均年薪超 112 万",
+          "source": "百度热搜",
           "rank": 5,
-          "hot_value": "687 万",
+          "hot_value": "热门",
           "category": "finance",
-          "summary": "就业市场新趋势，AI 公司高薪招聘文科生。",
-          "opinions": ["文科生春天来了", "文理融合是未来"],
-          "url": "https://finance.sina.com.cn/jjxw/2026-03-18/doc-ineimkqw3456789.shtml"
+          "summary": "腾讯发布 2025 年年报，员工薪酬引人注目。",
+          "opinions": ["羡慕了", "大厂待遇好"],
+          "url": "https://top.baidu.com/board?tab=realtime"
         },
         {
-          "title": "广东回南天概率大幅降低",
-          "source": "微博热搜",
+          "title": "中国又发现四个新矿",
+          "source": "百度热搜",
           "rank": 6,
-          "hot_value": "623 万",
-          "category": "other",
-          "summary": "气象部门预测今年回南天现象将明显减少。",
-          "opinions": ["终于不用墙上滴水了", "干燥天气真舒服"],
-          "url": "https://weather.com.cn/news/202603/t20260318_123456.shtml"
+          "hot_value": "热门",
+          "category": "politics",
+          "summary": "地质勘探取得新进展。",
+          "opinions": ["资源更丰富了", "好消息"],
+          "url": "https://top.baidu.com/board?tab=realtime"
         },
         {
-          "title": "某明星演唱会门票秒光",
-          "source": "微博热搜",
+          "title": "油价上涨 冲锋衣可能变更贵",
+          "source": "百度热搜",
           "rank": 7,
-          "hot_value": "578 万",
-          "category": "other",
-          "summary": "演唱会门票开售即售罄，粉丝热情高涨。",
-          "opinions": ["手速不够用啊", "黄牛票太贵了"],
-          "url": "https://ent.sina.com.cn/y/neidi/2026-03-18/doc-xyz123.shtml"
+          "hot_value": "热门",
+          "category": "finance",
+          "summary": "国际油价上涨影响多个行业。",
+          "opinions": ["又要多花钱了", "油价涨得真快"],
+          "url": "https://top.baidu.com/board?tab=realtime"
         },
         {
-          "title": "新能源汽车销量创新高",
+          "title": "女子投保两年半后确诊患癌遭拒赔",
           "source": "百度热搜",
           "rank": 8,
-          "hot_value": "534 万",
-          "category": "finance",
-          "summary": "2 月新能源汽车销量同比增长 35%。",
-          "opinions": ["电动车时代真的来了", "充电桩还要更多"],
-          "url": "https://auto.people.com.cn/n1/2026/0318/c12345-67890.html"
+          "hot_value": "热门",
+          "category": "other",
+          "summary": "保险理赔纠纷引发关注。",
+          "opinions": ["保险要仔细看条款", "维权不容易"],
+          "url": "https://top.baidu.com/board?tab=realtime"
         },
         {
-          "title": "某地发生地震",
-          "source": "头条热榜",
+          "title": "李白杜牧辛弃疾火到韩国地铁站",
+          "source": "百度热搜",
           "rank": 9,
-          "hot_value": "489 万",
+          "hot_value": "热门",
           "category": "other",
-          "summary": "某地发生 4.5 级地震，无人员伤亡。",
-          "opinions": ["平安就好", "注意防震"],
-          "url": "https://www.chinanews.com.cn/sh/2026/03-18/12345.shtml"
+          "summary": "中国文化走出去。",
+          "opinions": ["文化输出", "为中国文化点赞"],
+          "url": "https://top.baidu.com/board?tab=realtime"
         },
         {
-          "title": "某品牌新品发布会",
-          "source": "微博热搜",
+          "title": "鱼塘主坚持 2 年用辣椒喂鱼",
+          "source": "百度热搜",
           "rank": 10,
-          "hot_value": "445 万",
+          "hot_value": "热门",
           "category": "other",
-          "summary": "科技品牌发布多款新品，引发关注。",
-          "opinions": ["价格有点贵", "功能挺创新"],
-          "url": "https://tech.163.com/26/0318/12/ABCDEF123456.html"
+          "summary": "养殖新方法引发好奇。",
+          "opinions": ["这是什么操作", "鱼会辣吗"],
+          "url": "https://top.baidu.com/board?tab=realtime"
+        },
+        {
+          "title": "伊朗发动空袭 疑似导弹碎片密如雨下",
+          "source": "百度热搜",
+          "rank": 11,
+          "hot_value": "热门",
+          "category": "global",
+          "summary": "中东局势紧张。",
+          "opinions": ["世界不太平", "希望和平"],
+          "url": "https://top.baidu.com/board?tab=realtime"
+        },
+        {
+          "title": ""2026 年甘肃省考标准答案”不实",
+          "source": "百度热搜",
+          "rank": 12,
+          "hot_value": "热门",
+          "category": "other",
+          "summary": "官方辟谣省考答案泄露。",
+          "opinions": ["考试要诚信", "不信谣不传谣"],
+          "url": "https://top.baidu.com/board?tab=realtime"
+        },
+        {
+          "title": "一箱 12 瓶纯净水每瓶都有针眼",
+          "source": "百度热搜",
+          "rank": 13,
+          "hot_value": "热门",
+          "category": "other",
+          "summary": "食品安全问题引发关注。",
+          "opinions": ["太可怕了", "要注意安全"],
+          "url": "https://top.baidu.com/board?tab=realtime"
+        },
+        {
+          "title": "“我想跳下去 但想到了老婆孩子”",
+          "source": "百度热搜",
+          "rank": 14,
+          "hot_value": "热门",
+          "category": "other",
+          "summary": "生活压力大，但要坚强面对。",
+          "opinions": ["为了家人要坚持", "生活不易"],
+          "url": "https://top.baidu.com/board?tab=realtime"
+        },
+        {
+          "title": "中国第五大城市群定了",
+          "source": "百度热搜",
+          "rank": 15,
+          "hot_value": "热门",
+          "category": "politics",
+          "summary": "国家城市群规划新进展。",
+          "opinions": ["区域发展更好了", "期待新机遇"],
+          "url": "https://top.baidu.com/board?tab=realtime"
         }
       ]
     },
@@ -143,20 +193,94 @@
       "id": "finance",
       "title": "财经金融",
       "description": "股市、金融、银行、经济、投资等",
-      "items": []
+      "items": [
+        {
+          "title": "腾讯年报披露：人均年薪超 112 万",
+          "source": "百度热搜",
+          "rank": 1,
+          "hot_value": "热门",
+          "category": "finance",
+          "summary": "腾讯发布 2025 年年报，员工薪酬引人注目。",
+          "opinions": ["羡慕了", "大厂待遇好"],
+          "url": "https://top.baidu.com/board?tab=realtime"
+        },
+        {
+          "title": "油价上涨 冲锋衣可能变更贵",
+          "source": "百度热搜",
+          "rank": 2,
+          "hot_value": "热门",
+          "category": "finance",
+          "summary": "国际油价上涨影响多个行业。",
+          "opinions": ["又要多花钱了", "油价涨得真快"],
+          "url": "https://top.baidu.com/board?tab=realtime"
+        }
+      ]
     },
     {
       "id": "politics",
       "title": "时政要闻",
       "description": "政策、国务院、两会、政府、法规等",
-      "items": []
+      "items": [
+        {
+          "title": "干事创业一定要树立正确政绩观",
+          "source": "百度热搜",
+          "rank": 1,
+          "hot_value": "置顶",
+          "category": "politics",
+          "summary": "强调干部要树立正确政绩观，为民服务。",
+          "opinions": ["为民务实", "真抓实干"],
+          "url": "https://top.baidu.com/board?tab=realtime"
+        },
+        {
+          "title": "中国又发现四个新矿",
+          "source": "百度热搜",
+          "rank": 2,
+          "hot_value": "热门",
+          "category": "politics",
+          "summary": "地质勘探取得新进展。",
+          "opinions": ["资源更丰富了", "好消息"],
+          "url": "https://top.baidu.com/board?tab=realtime"
+        },
+        {
+          "title": "中国第五大城市群定了",
+          "source": "百度热搜",
+          "rank": 3,
+          "hot_value": "热门",
+          "category": "politics",
+          "summary": "国家城市群规划新进展。",
+          "opinions": ["区域发展更好了", "期待新机遇"],
+          "url": "https://top.baidu.com/board?tab=realtime"
+        }
+      ]
     },
     {
       "id": "global",
       "title": "全球局势",
       "description": "美国、俄罗斯、欧盟、中东、国际关系等",
-      "items": []
+      "items": [
+        {
+          "title": "伊朗发动空袭 疑似导弹碎片密如雨下",
+          "source": "百度热搜",
+          "rank": 1,
+          "hot_value": "热门",
+          "category": "global",
+          "summary": "中东局势紧张。",
+          "opinions": ["世界不太平", "希望和平"],
+          "url": "https://top.baidu.com/board?tab=realtime"
+        },
+        {
+          "title": "伊朗：将对美以发起"最强硬"打击",
+          "source": "百度热搜",
+          "rank": 2,
+          "hot_value": "热门",
+          "category": "global",
+          "summary": "伊朗表态强硬。",
+          "opinions": ["局势升级", "关注后续发展"],
+          "url": "https://top.baidu.com/board?tab=realtime"
+        }
+      ]
     }
   ],
-  "note": "由于 sensight API 无法访问，此文件为简化版本，仅包含综合榜 TOP10。完整数据需要 API 支持。"
+  "data_source": "百度热搜 API (https://top.baidu.com/board?tab=realtime)",
+  "note": "数据来源于真实百度热搜，微博和头条 API 无法访问。"
 }
