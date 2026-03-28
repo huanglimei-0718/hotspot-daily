@@ -1,0 +1,127 @@
+{
+  "date": "2026-03-28",
+  "updated": "2026-03-28T12:02:00+08:00",
+  "total": 10,
+  "items": [
+    {
+      "title": "双八双十暴富日",
+      "source": "微博/头条",
+      "rank": 1,
+      "hot_value": "5亿阅读",
+      "category": "other",
+      "detail": {
+        "summary": "2026年3月28日被网友冠以“双八双十暴富日”，因数字谐音与传统民俗双重加持走红，话题总阅读量突破5亿。",
+        "opinions": ["网友认为是心理安慰和精神寄托", "有观点批评这是新型迷信和智商税"],
+        "url": "http://m.toutiao.com/group/7622113002950574635/"
+      }
+    },
+    {
+      "title": "祝绪丹虞书欣同场零互动",
+      "source": "微博",
+      "rank": 2,
+      "hot_value": "8000万",
+      "category": "entertainment",
+      "detail": {
+        "summary": "祝绪丹与虞书欣在小红书REDGALA活动上同场零互动，引发“塑料姐妹情”热议，冲上热搜前二十。",
+        "opinions": ["网友批评祝绪丹势利", "粉丝呼吁专注作品"],
+        "url": "https://ent.sina.cn/2026-03-28/detail-inhsnuux9004422.d.html"
+      }
+    },
+    {
+      "title": "乘风2026官宣定档",
+      "source": "微博/头条",
+      "rank": 3,
+      "hot_value": "12亿阅读",
+      "category": "entertainment",
+      "detail": {
+        "summary": "芒果TV《乘风2026》（浪姐7）官宣全阵容，4月3日开启全程无修音直播，33位姐姐集结。",
+        "opinions": ["网友期待无修音挑战", "粉丝为姐姐们加油"],
+        "url": "https://www.sina.cn/news/detail/5281103361608909.html"
+      }
+    },
+    {
+      "title": "北大发布新型AI芯片",
+      "source": "头条",
+      "rank": 4,
+      "hot_value": "",
+      "category": "other",
+      "detail": {
+        "summary": "北京大学发布基于阻变存储器的模拟矩阵计算芯片，能效较顶级GPU提升百倍至千倍。",
+        "opinions": ["专家称将推动AI芯片算力提升", "有望解决内存墙瓶颈"],
+        "url": "https://www.peopleapp.com/column/30051491129-500007364521"
+      }
+    },
+    {
+      "title": "2026中国科幻大会开幕",
+      "source": "微博/头条",
+      "rank": 5,
+      "hot_value": "",
+      "category": "other",
+      "detail": {
+        "summary": "2026中国科幻大会在北京开幕，以“科学梦想 创造未来”为主题，庆祝创办十周年。",
+        "opinions": ["科幻迷狂欢", "推动中国科幻产业发展"],
+        "url": "http://www.xinhuanet.com/tech/20260327/10a33c8a93e946509b7c86cd3dbd2f6d/c.html"
+      }
+    },
+    {
+      "title": "U23国足的泰国生死战",
+      "source": "微博/头条",
+      "rank": 6,
+      "hot_value": "",
+      "category": "other",
+      "detail": {
+        "summary": "U23男足在西安国际青年足球锦标赛对阵泰国，央视CCTV5+直播，球票售罄。",
+        "opinions": ["球迷期待年轻球员表现", "关注新人成长"],
+        "url": "https://3g.163.com/news/article/KOS5SKPD0556C31H.html"
+      }
+    },
+    {
+      "title": "2026中国网络媒体论坛",
+      "source": "微博",
+      "rank": 7,
+      "hot_value": "327809",
+      "category": "politics",
+      "detail": {
+        "summary": "2026中国网络媒体论坛将于3月28日在郑州开幕，主题为“发挥主流媒体引领力 激发多元主体创造力”。",
+        "opinions": ["共商网络内容生态发展", "推动媒体融合"],
+        "url": "http://opinion.people.com.cn/n1/2026/0328/c1003-40690696.html"
+      }
+    },
+    {
+      "title": "伊朗导弹密集袭击以色列",
+      "source": "微博",
+      "rank": 8,
+      "hot_value": "94431",
+      "category": "global",
+      "detail": {
+        "summary": "伊朗两小时内向以色列发射四轮导弹，以军监测到袭击，导致1死2伤。",
+        "opinions": ["国际社会关注中东局势", "地区紧张升级"],
+        "url": "http://m.toutiao.com/group/7622077528047403554/"
+      }
+    },
+    {
+      "title": "央视点赞张凌赫雉鸡翎造型",
+      "source": "微博",
+      "rank": 9,
+      "hot_value": "98445",
+      "category": "entertainment",
+      "detail": {
+        "summary": "央视新闻点赞张凌赫在《逐玉》中的雉鸡翎造型，称其融合传统戏曲美学，引发关注。",
+        "opinions": ["网友称赞东方美学", "文化自信体现"],
+        "url": "http://m.toutiao.com/group/7622137420708053567/"
+      }
+    },
+    {
+      "title": "樊振东世乒赛参赛待定",
+      "source": "微博",
+      "rank": 10,
+      "hot_value": "",
+      "category": "other",
+      "detail": {
+        "summary": "樊振东是否参加伦敦世乒赛待定，小将温瑞博有望递补参赛资格。",
+        "opinions": ["球迷关注樊振东动态", "期待新人表现"],
+        "url": "http://m.toutiao.com/group/7621855612762178084/"
+      }
+    }
+  ]
+}
