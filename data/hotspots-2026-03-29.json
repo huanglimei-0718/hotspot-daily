@@ -1,0 +1,127 @@
+{
+  "date": "2026-03-29",
+  "updated": "2026-03-29T19:20:00+08:00",
+  "total": 10,
+  "items": [
+    {
+      "title": "陈牧驰陈冰官宣结婚生子",
+      "source": "微博热搜",
+      "rank": 1,
+      "hot_value": "10亿+",
+      "category": "entertainment",
+      "detail": {
+        "summary": "演员陈牧驰与歌手陈冰3月28日同步在微博官宣结婚，并透露已育有一子，小名\"柒宝\"，两人在舆论低谷期相互陪伴终成正果。",
+        "opinions": ["网友祝福：终于修成正果", "称赞两人患难见真情", "孩子小名柒宝很有爱"],
+        "url": "https://ent.sina.cn/2026-03-28/detail-inhsqaqq1014991.d.html"
+      }
+    },
+    {
+      "title": "中东战火蔓延 胡塞武装参战",
+      "source": "微博热搜",
+      "rank": 2,
+      "hot_value": "985万",
+      "category": "global",
+      "detail": {
+        "summary": "也门胡塞武装3月28日宣布向以色列南部发射弹道导弹，首次直接参战，行动将持续至侵略停止。",
+        "opinions": ["地区冲突进一步扩大", "霍尔木兹海峡局势紧张", "国际社会担忧局势升级"],
+        "url": "http://www.xinhuanet.com/20260326/bd88ad51967f4d99aad8658497d17df8/c.html"
+      }
+    },
+    {
+      "title": "特朗普威胁\"下一个是古巴\"",
+      "source": "微博热搜",
+      "rank": 3,
+      "hot_value": "968万",
+      "category": "global",
+      "detail": {
+        "summary": "特朗普3月27日在迈阿密会议上威胁称继伊朗之后\"下一个是古巴\"，美方加大对古巴的石油限制措施。",
+        "opinions": ["古巴斥责美方厚颜无耻", "国际关系紧张", "地区局势引发担忧"],
+        "url": "https://news.cctv.cn/2026/01/11/ARTIrmjGPYsSCVk0D4QSbmxF260111.shtml"
+      }
+    },
+    {
+      "title": "四大国有行2025年净利润超9000亿",
+      "source": "百度热搜",
+      "rank": 4,
+      "hot_value": "956万",
+      "category": "finance",
+      "detail": {
+        "summary": "工商银行、建设银行、交通银行、邮储银行2025年财报发布，合计净利润超9000亿元，其中工行日赚超10亿元。",
+        "opinions": ["银行盈利能力强劲", "净息差明显下滑", "分红超2400亿回馈股东"],
+        "url": "https://cj.sina.com.cn/articles/view/7857201856/1d45362c001903qp5e"
+      }
+    },
+    {
+      "title": "软银获400亿美元过桥贷款重注OpenAI",
+      "source": "头条热搜",
+      "rank": 5,
+      "hot_value": "945万",
+      "category": "finance",
+      "detail": {
+        "summary": "软银集团3月27日宣布获得400亿美元无担保过桥贷款，用于加码对OpenAI投资，刷新单笔美元贷款纪录。",
+        "opinions": ["孙正义AI豪赌升级", "全球AI烧钱大战打响", "软银对OpenAI持股将超10%"],
+        "url": "http://m.toutiao.com/group/7622088712024801826/"
+      }
+    },
+    {
+      "title": "xAI 11位联合创始人全部离职",
+      "source": "头条热搜",
+      "rank": 6,
+      "hot_value": "932万",
+      "category": "finance",
+      "detail": {
+        "summary": "随着最后一位联合创始人罗斯·诺迪恩3月27日离职，马斯克2023年创建的xAI原始11人团队全部离开。",
+        "opinions": ["创始团队彻底出走", "马斯克宣布从零重建", "AI人才竞争激烈"],
+        "url": "http://m.toutiao.com/group/7622473549109789211/"
+      }
+    },
+    {
+      "title": "中国启动建设\"远海浮动岛\"",
+      "source": "百度热搜",
+      "rank": 7,
+      "hot_value": "918万",
+      "category": "other",
+      "detail": {
+        "summary": "由上海交通大学承担的国家重大科技基础设施\"远海浮动岛\"3月28日在上海启动建设，系世界首创超大型海上科研平台，预计2030年建成。",
+        "opinions": ["大国重器再上新", "支撑海洋科研走向深蓝", "体现中国科技实力"],
+        "url": "http://m.toutiao.com/group/7622108165152211494/"
+      }
+    },
+    {
+      "title": "苏翊鸣世界杯双冠王",
+      "source": "微博热搜",
+      "rank": 8,
+      "hot_value": "905万",
+      "category": "other",
+      "detail": {
+        "summary": "苏翊鸣3月28日获得单板滑雪坡面障碍技巧世界杯男子赛季总冠军，成为中国首位单赛季包揽两大项目世界杯总冠军的选手。",
+        "opinions": ["中国冰雪历史性突破", "创造双冠王里程碑", "翊鸣惊人实至名归"],
+        "url": "http://www.xinhuanet.com/sports/20260328/2c32b092f39946fe98581e1ce8d89b11/c.html"
+      }
+    },
+    {
+      "title": "民航夏秋航季开启",
+      "source": "头条热搜",
+      "rank": 9,
+      "hot_value": "892万",
+      "category": "other",
+      "detail": {
+        "summary": "2026年夏秋航季3月29日正式开启，至10月24日结束，全国民航每周计划安排客货运航班12.1万班，国产大飞机航线再上新。",
+        "opinions": ["国际航班增长1.8%", "出行需求旺盛", "航线网络持续优化"],
+        "url": "http://m.toutiao.com/group/7622476240028549647/"
+      }
+    },
+    {
+      "title": "京津冀骨灰海葬启航",
+      "source": "百度热搜",
+      "rank": 10,
+      "hot_value": "880万",
+      "category": "other",
+      "detail": {
+        "summary": "2026年京津冀骨灰海葬3月29日在天津渤海湾举行，37份逝者骨灰随\"国宾9号\"海葬专用船回归大海。",
+        "opinions": ["节地生态葬推广", "京津冀协同服务", "温情送别逝者"],
+        "url": "http://m.toutiao.com/group/7622633042284937768/"
+      }
+    }
+  ]
+}
