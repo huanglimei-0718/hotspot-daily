@@ -1,0 +1,127 @@
+{
+  "date": "2026-03-19",
+  "updated": "2026-03-19T12:00:00+08:00",
+  "total": 10,
+  "items": [
+    {
+      "title": "伊朗最高国家安全委员会秘书阿里·拉里贾尼在美以空袭中身亡",
+      "source": "微博热搜",
+      "rank": 1,
+      "hot_value": "爆",
+      "category": "global",
+      "detail": {
+        "summary": "伊朗最高国家安全委员会秘书阿里·拉里贾尼在以色列空袭中身亡，伊朗总统证实其遇难并发表悼词，誓言严惩凶手，中东局势全面升级。",
+        "opinions": ["地区冲突加剧，国际社会呼吁降温", "伊朗誓言报复，紧张局势进一步升级"],
+        "url": "http://www.xinhuanet.com/world/20260318/dd1b49dee3da404c815cb6fcf33c1c01/c.html"
+      }
+    },
+    {
+      "title": "国内油价 3 月 24 日将迎六连涨 或重回 9 元时代",
+      "source": "百度热搜",
+      "rank": 2,
+      "hot_value": "热门",
+      "category": "finance",
+      "detail": {
+        "summary": "预计 3 月 24 日国内成品油价格将迎来年内第六次上调，每升涨幅约 1.6 元，92 号汽油或将重回 9 元时代，加满一箱 50 升油箱将多花约 80-100 元。",
+        "opinions": ["油价上涨增加出行成本", "国际油价受中东局势影响暴涨"],
+        "url": "https://finance.sina.com.cn/china/2026-03-19/doc-inhrkwsv9362861.shtml"
+      }
+    },
+    {
+      "title": "微信 iOS 端灰度测试折叠发图功能",
+      "source": "微博热搜",
+      "rank": 3,
+      "hot_value": "987 万",
+      "category": "other",
+      "detail": {
+        "summary": "微信 iOS 端灰度测试折叠发图功能，用户发送三张及以上图片/视频时可合并展示，优化聊天界面整洁度。",
+        "opinions": ["这个功能实用，聊天界面更整洁", "微信越来越注重用户体验了"],
+        "url": "http://m.toutiao.com/group/7618807037975118377/"
+      }
+    },
+    {
+      "title": "小米 SU7 新品发布会 智能驾控全面升级",
+      "source": "头条热榜",
+      "rank": 4,
+      "hot_value": "热门",
+      "category": "other",
+      "detail": {
+        "summary": "新一代小米 SU7 于 3 月 19 日正式发布，智能驾控全面升级，雷军官宣新车亮点，科技圈关注度高。",
+        "opinions": ["小米汽车越来越有竞争力了", "期待实际驾驶体验"],
+        "url": "https://finance.sina.com.cn/tech/roll/2026-03-18/doc-inhrkwsv9362860.shtml"
+      }
+    },
+    {
+      "title": "华为合作伙伴大会开幕 聚焦 AI 鸿蒙 6G 与智能汽车",
+      "source": "头条热榜",
+      "rank": 5,
+      "hot_value": "热门",
+      "category": "other",
+      "detail": {
+        "summary": "华为合作伙伴大会 3 月 19 日开幕，聚焦 AI、鸿蒙、6G 与智能汽车四大赛道，释放科技产业融合信号。",
+        "opinions": ["华为生态布局越来越完善", "国产技术自主创新值得期待"],
+        "url": "http://m.toutiao.com/group/7618784996257546795/"
+      }
+    },
+    {
+      "title": "中办国办部署土地承包到期后再延长 30 年试点",
+      "source": "头条热榜",
+      "rank": 6,
+      "hot_value": "热门",
+      "category": "politics",
+      "detail": {
+        "summary": "中共中央办公厅、国务院办公厅发布意见，部署第二轮土地承包到期后再延长 30 年试点工作，稳定农村土地承包关系。",
+        "opinions": ["有利于农民长期投资土地", "农村政策更加稳定可预期"],
+        "url": "https://www.gov.cn/zhengce/202603/content_7063138.htm"
+      }
+    },
+    {
+      "title": "郑恺苗苗首度公开三胎女儿 一家五口同框亮相",
+      "source": "微博热搜",
+      "rank": 7,
+      "hot_value": "543 万",
+      "category": "entertainment",
+      "detail": {
+        "summary": "郑恺和苗苗首次公开三胎女儿照片，一家五口同框亮相，画面温馨暖心，引发网友祝福。",
+        "opinions": ["一家五口真幸福", "恭喜郑恺苗苗"],
+        "url": "http://m.toutiao.com/group/7618752496198009385/"
+      }
+    },
+    {
+      "title": "林志玲谈结婚 6 年感受 儿子用英文日文表白",
+      "source": "微博热搜",
+      "rank": 8,
+      "hot_value": "421 万",
+      "category": "entertainment",
+      "detail": {
+        "summary": "林志玲接受采访谈结婚 6 年感受，透露儿子会用英文和日文表白，展现家庭幸福生活。",
+        "opinions": ["志玲姐姐好幸福", "混血宝宝真可爱"],
+        "url": "https://k.sina.cn/article_7857201856_1d45362c001903cx24.html"
+      }
+    },
+    {
+      "title": "中国女篮战胜巴西 获 2026 女篮世界杯门票",
+      "source": "头条热榜",
+      "rank": 9,
+      "hot_value": "热门",
+      "category": "other",
+      "detail": {
+        "summary": "中国女篮在资格赛中战胜巴西女篮，成功获得 2026 年女篮世界杯参赛门票，比赛现场气氛热烈。",
+        "opinions": ["中国女篮好样的", "期待世界杯表现"],
+        "url": "https://news.ifeng.com/c/8raozwsxs8f"
+      }
+    },
+    {
+      "title": "蓝箭航天朱雀 2E 运载火箭成功复飞",
+      "source": "百度热搜",
+      "rank": 10,
+      "hot_value": "热门",
+      "category": "other",
+      "detail": {
+        "summary": "蓝箭航天朱雀 2E 运载火箭于 3 月 19 日成功复飞，中国商业航天再获新进展。",
+        "opinions": ["中国商业航天发展迅速", "民营航天企业越来越成熟"],
+        "url": "http://m.toutiao.com/group/7618728929960018467/"
+      }
+    }
+  ]
+}
